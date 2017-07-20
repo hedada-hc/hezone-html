@@ -1,0 +1,11 @@
+
+
+// 全局按钮组件
+@mixin g-button($color1, $color2, $width){
+	display: block;
+	background:linear-gradient(to left, $color2 , $color1);
+	box-shadow: -2px 5px 6px $color1;
+	width: $width;
+	height: 30px;
+	border-radius: 30px;
+}

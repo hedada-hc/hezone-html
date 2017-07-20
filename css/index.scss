@@ -1,0 +1,38 @@
+@import 'mixin';
+$color: #f2f2f2; //全局背景色
+$z-color: #ff510c; //主色调
+
+a{
+	text-decoration: none;
+	text-align: center;
+	color: $color;
+	line-height: 30px;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background: $color;
+}
+
+.content{
+	width: 1200px;
+	margin: 50px auto;
+	.content_game{
+		width: 920px;
+		height: 500px;
+		background:#ffffff;
+		border-top: 2px solid #ff605f;
+		.button{
+			margin: 10px;
+			@include g-button(#ff605f,#ff7849, 100px);
+		}
+		.button2{
+			margin: 10px;
+			@include g-button(#66cd40,#51b457, 120px);
+		}
+		.button3{
+			margin: 10px;
+			@include g-button(#4494fe,#6caaff, 120px);
+		}
+	}
+}
