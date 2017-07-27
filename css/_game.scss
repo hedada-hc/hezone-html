@@ -4,7 +4,6 @@
 	margin: 20px auto;
 	.game_content{
 		width: 926px;
-		height: 500px;
 		background:#ffffff;
 		border-top: 2px solid #ffffff;
 		overflow: hidden;
@@ -303,7 +302,58 @@
 						width: 128px;
 						text-align: center;
 						height: 36px;
+						.game_luck_btn_jing{
+							display: inline-block;
+							width: 50px;
+							height: 24px;
+							background:linear-gradient(to left, #ff7849 , #ff605f); 
+							color: #ffffff;
+							text-align: center;
+							line-height: 24px;
+							border-radius: 30px;
+							box-shadow: -2px 5px 6px #ff605f;
+							cursor: pointer;
+						}
+
+						.game_luck_btn_yikai{
+							display: inline-block;
+							width: 50px;
+							height: 24px;
+							background: #ececec;
+							color: #6d6d6d;
+							text-align: center;
+							line-height: 24px;
+							border-radius: 30px;
+							cursor: pointer;
+						}
+
+						.game_luck_shou{
+							color: #ff510c;
+							display: block;
+						}
+
+						.game_luck_num{
+							width: 28px;
+							height: 28px;
+							border-radius: 28px;
+							background:linear-gradient(to left, #ff7849 , #ff605f); 
+							color: #ffffff;
+							text-align: center;
+							line-height: 28px;
+							display: inline-block;
+						}
+
+						.game_luck_x{
+							background: #ececec;
+							color: #6d6d6d;
+						}
 					}
+
+					.game_luck_zhong{
+						color: #ff5f60;
+					}
+
+					
 				}
 			}
 		}
