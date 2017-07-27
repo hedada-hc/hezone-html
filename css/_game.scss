@@ -211,6 +211,7 @@
 								font-size: 12px;
 								float: left;
 								margin-left: 5px;
+								text-align: left;
 								span{
 									color: #606060;
 									display: block;
@@ -369,6 +370,16 @@
 		.button3{
 			margin: 10px;
 			@include g-button(#4494fe,#6caaff, 120px);
+		}
+	}
+
+	.game_member{
+		width: 260px;
+		height: 500px;
+		background: #ffffff;
+		float: right;
+		.game_member_info{
+			
 		}
 	}
 }
