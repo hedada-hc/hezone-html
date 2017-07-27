@@ -1,0 +1,263 @@
+@charset "utf-8";
+.game{
+	width: 1200px;
+	margin: 20px auto;
+	.game_content{
+		width: 926px;
+		height: 500px;
+		background:#ffffff;
+		border-top: 2px solid #ffffff;
+		overflow: hidden;
+		float: left;
+		.game_nav{
+			width: 926px;
+			height: 45px;
+			background: #f2f2f2;
+			border-bottom: 2px solid #ffffff;
+			ul{
+				li{
+					width: 126px;
+					height: 45px;
+					float: left;
+					text-align: center;
+					line-height: 45px;
+					cursor: pointer;
+					a{
+						color: #ababab;
+					}
+				}
+				li:hover{
+					background: #ffffff;
+					a{
+						color: #ff500b;
+					}
+				}
+				.game_nav_selected{
+					background: #ffffff;
+					a{
+						color: #ff500b;
+					}
+				}
+			}
+		}
+
+		.game_nav_help{
+			background: #f9f9f9;
+			height: 30px;
+			width: 962px;
+			ul{
+				li{
+					float: left;
+					line-height: 30px;
+					text-align: center;
+					padding: 0 5px 0 5px;
+					a{
+						color: #777777;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+
+		.game_isn{
+			width: 926px;
+			height: 2px;
+			background: #ededed;
+			ins{
+				width: 700px;
+				height: 2px;
+				display: block;
+				background:linear-gradient(to left, #ff7849 , #ff605f);
+				transition: width 5s;
+			}
+		}
+
+		.game_time{
+			width: 926px;
+			height: 105px;
+			border-bottom: 1px solid #f6f6f6;
+			.game_time_left{
+				width: 452px;
+				height: 80px;
+				border-right: 1px solid #f1f1f1; 
+				float: left;
+				margin-top: 12px;
+				.game_time_left_pic{
+					width: 50px;
+					height: 56px;
+					background-image: url("../images/time.png");
+					margin: 10px 10px 10px 30px;
+					float: left;
+				}
+				.game_time_info{
+					width: 340px;
+					height: 80px;
+					float: left;
+					margin: 10px 10px 10px 10px; 
+					.game_time_info_text{
+						color: #777777;
+						.game_time_info_qihao{
+							color: #ff7037;
+						}
+						.game_time_info_mm{
+							color: #ffffff;
+							background:linear-gradient(to left, #ff7849 , #ff605f);
+							box-shadow: -2px 5px 6px #ff605f;
+							border-radius: 30px;
+							display: inline-block;
+							width: 40px;
+							text-align: center;
+						}
+					}
+					.game_time_info_vip{
+						display: block;
+						font-size: 13px;
+						width: 244px;
+						height: 22px;
+						border-radius: 20px;
+						background:linear-gradient(to left, #ff7849 , #ff605f);
+						color: #ffffff;
+						text-align: center;
+						line-height: 22px;
+						margin: 10px 10px 10px 36px;
+					}
+				}
+			}
+
+			.game_time_right{
+				width: 460px;
+				float: right;
+				height: 100px;
+				.game_time_member{
+					width: 200px;
+					float: left;
+					margin: 20px 20px 10px 10px;
+					.game_time_member_title{
+						display: block;
+						color: #777777;
+						span{
+							color: #ff6000;
+						}
+					}
+					img{
+						width: 36px;
+						height: 36px;
+						overflow: hidden;
+						display: block;
+						float: left;
+						border-radius: 50px;
+						margin-top: 5px;
+					}
+					.game_time_member_info{
+						float: left;
+						margin-top: 5px;
+						span{
+							padding-left:10px;
+							display: block;
+							color: #777777;
+							font-size: 14px;
+						}
+						.game_time_shou{
+							display: inline;
+							color: #ff6000;
+							padding-left: 2px;
+						}
+						.game_time_kui{
+							display: inline;
+							color: #66cd40;
+							padding-left: 2px;
+						}
+					}
+				}
+			}
+		}
+
+		.game_danmu{
+			width: 900px;
+			height: 38px;
+			background: #f9f9f9;
+			margin: 10px auto;
+			.game_danmu_tag{
+				width: 70px;
+				height: 38px;
+				background:linear-gradient(to left, #ff7849 , #ff605f); 
+				color: #ffffff;
+				text-align: center;
+				line-height: 38px;
+				font-size: 14px;
+				float: left;
+			}
+
+			.game_danmu_content{
+				ul{
+					li{
+						float: left;
+						a{
+							width: auto;
+							margin: 3px;
+							float: left; 
+							cursor: pointer;
+							img{
+								display: block;
+								width: 32px;
+								height: 32px;
+								border-radius: 30px;
+								float: left;
+							}
+							.game_danmu_content_msg{
+								font-size: 12px;
+								float: left;
+								margin-left: 5px;
+								span{
+									color: #606060;
+									display: block;
+									line-height: 16px;
+								}
+								.game_danmu_name{
+									color: #989898;
+									font-size: 10px;
+									text-align: left;
+									line-height: 14px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.game_danmu_send{
+				float: right;
+				width: 76px;
+				height: 38px;
+				background:linear-gradient(to left, #ff7849 , #ff605f); 
+				border-radius: 30px;
+				text-align: center;
+				line-height: 38px;
+				color: #ffffff;
+				font-size: 14px;
+				cursor: pointer;
+				margin-right: -70px;
+			}
+
+			.game_danmu_block{
+				background: #ffffff;
+				width: 70px;
+				height: 38px;
+				float: right;
+			}
+		}
+
+		.button{
+			margin: 10px;
+			@include g-button(#ff605f,#ff7849, 100px);
+		}
+		.button2{
+			margin: 10px;
+			@include g-button(#66cd40,#51b457, 120px);
+		}
+		.button3{
+			margin: 10px;
+			@include g-button(#4494fe,#6caaff, 120px);
+		}
+	}
+}
