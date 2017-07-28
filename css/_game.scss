@@ -388,6 +388,7 @@
 		background: #ffffff;
 		float: right;
 		.game_member_info{
+<<<<<<< HEAD
 			width: 240px;
 			padding: 10px;
 			.game_member_info_head{
@@ -416,6 +417,15 @@
 						border-radius: 20px;
 					}
 				}
+=======
+
+			.game_member_info_head{
+				width: 78px;
+				height: 78px;
+				border-radius: 78px;
+				border: 10px solid #f8f9fb;
+				background-image: url("../images/head.jpg");
+>>>>>>> 7a3b5ff46d75a93c7a1caaafcf5c07a2076ab98e
 			}
 		}
 	}
