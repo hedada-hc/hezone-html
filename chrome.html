@@ -1,32 +1,18 @@
-<!DOCTYPE html>  
-<html>  
-<head>  
-    <title>Simple Webkit notification example</title>  
-</head>  
-   
-<h2>First click the 'request permission' button</h2>  
-<button id="request">Request permission</button>  
-<h2>After permission is granted, click the 'show notification' button</h2>  
-<button id="show">Show notification</button>  
-   
-<script type="text/javascript">  
-   
-   
-    document.getElementById('request').addEventListener('click', function() {  
-        window.webkitNotifications.requestPermission();  
-    }, false);  
-   
-   
-    document.getElementById('show').addEventListener('click', function() {  
-        showNotification();  
-    }, false);  
-   
-    function showNotification() {  
-        // only show if we've got the correct permissions  
-        if (window.webkitNotifications.checkPermission() === 0) {  
-            // note the show()  
-            window.webkitNotifications.createNotification('images/email.jpg', 'Plain Text Notification', 'Notification from the browser!').show();  
-        }  
-    }  
-</script>  
-</html> 
+<body>
+<ul id="RunTopic">
+<li>文字1</li>
+<li>文字2</li>
+<li>文字3</li>
+<li>文字4</li>
+<li>文字5</li>
+
+</ul>
+<br>
+<input type="button" onclick="test();" value="test">
+<script type="text/JavaScript">
+function test()
+{
+$("#RunTopic").find("li:first").appendTo($("#RunTopic"));
+}
+</script>
+</body>

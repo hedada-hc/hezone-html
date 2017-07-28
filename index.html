@@ -7,6 +7,9 @@
 	<meta name="keywords" content=网赚,网络兼职,玩游戏赚钱,网络赚钱,网赚平台,鱼丸猫>
 	<meta name="description" content=鱼丸猫是一个网络兼职平台，用户通过完成“玩游戏赚钱、打码赚钱、完成任务”等操作，来实现网上赚钱，让用户能在工作之余或者玩游戏的同时赚到钱。>
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/layer.js"></script>
+	
 </head>
 <body>
 <!-- 头部开始 -->
@@ -50,7 +53,7 @@
 <!-- 头部结束 -->
 
 <!-- 竞猜区域开始 -->
-	<div class="game">
+	<div id="app" class="game">
 		<div class="game_content">
 			<div class="game_nav">
 				<ul>
@@ -78,14 +81,13 @@
 			<div class="game_isn">
 				<ins></ins>
 			</div>
-			
 			<!-- 开奖时间区域 -->
 			<div class="game_time">
 				<div class="game_time_left">
 					<div class="game_time_left_pic"></div>
 					<div class="game_time_info">
 						<div class="game_time_info_text">
-							第 <span class="game_time_info_qihao">758195</span> 期 离竞猜截止时间，还有 <span class="game_time_info_mm">86</span> 秒
+							第 <span class="game_time_info_qihao">758195</span> 期 离竞猜截止时间，还有 <span class="game_time_info_mm">{{time}}</span> 秒
 						</div>
 						<a href="http://www.yuwanmao.com/vip" target="_black" class="game_time_info_vip">
 							开通砖石VIP，领取866万金币
@@ -121,12 +123,13 @@
 				</div>
 				<div class="game_danmu_content">
 					<ul>
-						<li>
+
+						<li v-for="danmus in danmuData">
 							<a href="http://www.yuwanmao.com/member/136411">
-								<img width="32" src="./images/headPic.jpg">
+								<img width="32" :src="danmus.headPic">
 								<div class="game_danmu_content_msg">
-									<span>未来五期做好调号打算 调03 同志们</span>
-									<span class="game_danmu_name">小小小小胖屌  <p>盈利：13,561,210</p></span>
+									<span>{{danmus.title}}</span>
+									<span class="game_danmu_name">{{danmus.nick}}  <p>盈利：13,561,210</p></span>
 								</div>
 							</a>
 						</li>
@@ -141,15 +144,6 @@
 							</a>
 						</li>
 
-						<li>
-							<a href="http://www.yuwanmao.com/member/136411">
-								<img width="32" src="./images/headPic.jpg">
-								<div class="game_danmu_content_msg">
-									<span>来一波3n0速度跟一百万</span>
-									<span class="game_danmu_name">小小小小胖屌  <p>盈利：13,561,210</p></span>
-								</div>
-							</a>
-						</li>
 					</ul>
 				</div>
 				<div class="game_danmu_send">
@@ -270,12 +264,19 @@
 		<div class="game_member">
 			<div class="game_member_info">
 				<div class="game_member_info_head"></div>
+				<div class="game_member_info_name">
+					<p>hezone_s</p>
+					<p>等级: <span class="game_member_info_tag">18级</span></p>
+					<p>ID: 22223</p>
+					<p>369 人</p>
+				</div>
 			</div>
 		</div>
 	</div>
 <!-- 竞猜区域结束	 -->
 
 
-
+<script type="text/javascript" src="./js/vue.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
