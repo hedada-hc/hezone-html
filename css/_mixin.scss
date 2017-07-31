@@ -1,3 +1,4 @@
+$paihangPic: "../images/no1.png" "../images/no2.png" "../images/no3.png";
 
 // 全局按钮组件
 @mixin g-button($color1, $color2, $width){
@@ -7,4 +8,21 @@
 	width: $width;
 	height: 30px;
 	border-radius: 30px;
+}
+
+//金币组件
+@mixin g-jinbi(){
+	display: inline-block;
+	width: 14px;
+	height: 12px;
+	background-image: url("../images/jinbi.png");
+	margin-left: 4px;
+}
+
+//排名组件
+@mixin paiming($key){
+	background-image: url(nth($paihangPic,$key));
+	display:inline-block;
+	width:20px;
+	height:26px;
 }

@@ -361,6 +361,9 @@
 
 					.game_luck_zhong{
 						color: #ff5f60;
+						a{
+							color: #ff5f60;
+						}
 					}
 
 					
@@ -368,27 +371,14 @@
 			}
 		}
 
-		.button{
-			margin: 10px;
-			@include g-button(#ff605f,#ff7849, 100px);
-		}
-		.button2{
-			margin: 10px;
-			@include g-button(#66cd40,#51b457, 120px);
-		}
-		.button3{
-			margin: 10px;
-			@include g-button(#4494fe,#6caaff, 120px);
-		}
+		
 	}
 
 	.game_member{
 		width: 260px;
-		height: 500px;
 		background: #ffffff;
 		float: right;
 		.game_member_info{
-<<<<<<< HEAD
 			width: 240px;
 			padding: 10px;
 			.game_member_info_head{
@@ -407,26 +397,221 @@
 				margin-left: 8px;
 				font-size: 14px;
 				p{
+					padding: 2px;
 					margin: 0;
 					.game_member_info_tag{
 						display: inline-block;
-						padding:5px;
+						padding: 0 10px 0 10px;
 						background: linear-gradient(to left, #ff7849, #ff605f);
 						color: #ffffff;
 						text-align: center;
 						border-radius: 20px;
 					}
 				}
-=======
 
-			.game_member_info_head{
-				width: 78px;
-				height: 78px;
-				border-radius: 78px;
-				border: 10px solid #f8f9fb;
-				background-image: url("../images/head.jpg");
->>>>>>> 7a3b5ff46d75a93c7a1caaafcf5c07a2076ab98e
+				p:last-of-type{
+					font-size: 12px;
+					span{
+						display: inline-block;
+						width: 10px;
+						height: 10px;
+						background: #66cd40;
+						border-radius: 10px;
+					}
+				}
+		}
+
+		.game_user_jinbi{
+			float: left;
+			color: #333333;
+			font-size: 14px;
+			text-align: center;
+			width: 100%;
+			margin: 0;
+			line-height: 30px;
+			border-bottom: 1px solid #f7f7f7;
+			padding-bottom: 8px;
+			span{
+				color: #ff615e;
 			}
 		}
 	}
 }
+
+	.game_info{
+		width: 240px;
+		padding: 10px;
+		background: #ffffff;
+		float: right;
+		font-size: 14px;
+		.game_info_qi{
+			width: 120px;
+			float: left;
+			cursor: pointer;
+			p{
+				margin: 5px;
+				text-align: center;
+				color: #333333;
+			}
+			span{
+				text-align: center;
+				display: block;
+				color: #ff734d;
+			}
+			.game_info_shu{
+				text-align: center;
+				display: none;
+				margin: 5px;
+				color: #66cd40;
+				span{
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					border: 1px solid #66cd40;
+					color: #66cd40;
+				}
+			}
+			.game_info_yin{
+				text-align: center;
+				display: block;
+				margin: 5px;
+				span{
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					border: 1px solid #ff734d;
+					color: #ff734d;
+				}
+			}
+		}
+
+		.game_info_qi:hover{
+			box-shadow: 0px 0px 20px #efefef;
+		}
+	}
+
+	.game_info_releef{
+		width: 240px;
+		padding: 10px;
+		background: #ffffff;
+		float: right;
+		font-size: 14px;
+		margin: 0;
+		border-bottom: 1px solid #f7f7f7;
+		ul{
+			li{
+				float: left;
+				color: #ffffff;
+				font-size: 12px;
+				.game_info_jiuji{
+					margin: 5px;
+					@include g-button(#ff605f,#ff7849, 70px);
+				}
+				.game_info_gongzi{
+					margin: 5px;
+					@include g-button(#66cd40,#51b457, 70px);
+				}
+				.game_info_yinhang{
+					margin: 5px;
+					@include g-button(#4494fe,#6caaff, 70px);
+				}
+			}
+		}
+	}
+
+	.game_ranking{
+		width: 240px;
+		padding: 10px;
+		background: #ffffff;
+		float: right;
+		font-size: 14px;
+		margin: 0;
+		.game_ranking_head{
+			height: 32px;
+			font-size: 14px;
+			color: #777777;
+			text-align: center;
+			span{
+				display: inline-block;
+				background-image: url("../images/paihangPic.png");
+				width: 22px;
+				height: 18px;
+				margin-right: 10px;
+			}
+		}
+
+		table{
+			color: #777777;
+			tr{
+				width: 240px;
+				border-bottom: 1px solid #efefef;
+				display: inline-block;
+				th{
+					font-weight: 100;
+					text-align: center;
+				}
+				td{
+					line-height: 28px;
+					font-size: 13px;
+					text-align: center;
+				}
+
+				td:nth-child(3){
+					color: #ff6000;
+					i{
+						@include g-jinbi();
+					}
+				}
+
+				td:nth-child(4){
+					color: #f43435;
+				}
+
+				td:nth-child(1){
+					width: 32px;
+				}
+
+				td:nth-child(2){
+					width: 50px;
+				}
+
+				td:nth-child(3){
+					width: 95px;
+				}
+
+				td:nth-child(4){
+					width: 45px;
+				}
+
+				th:nth-child(1){
+					width: 32px;
+				}
+
+				th:nth-child(2){
+					width: 50px;
+				}
+
+				th:nth-child(3){
+					width: 95px;
+				}
+
+				th:nth-child(4){
+					width: 45px;
+				}
+
+				.game_ranking_no1{
+					@include paiming(1);
+				}
+
+				.game_ranking_no2{
+					@include paiming(2);
+				}
+
+				.game_ranking_no3{
+					@include paiming(3);
+				}
+			}
+		}
+	}
+}
+
