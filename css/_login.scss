@@ -1,0 +1,70 @@
+
+.login{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.5);
+	display: none;
+	position: absolute;
+	z-index:100000;
+	.login_t{
+		width: 350px;
+		height: 404px;
+		background: #ffffff;
+		margin: 250px auto;
+		position: relative;
+		.login_win{
+			width: 290px;
+			height: 404px;
+			background: #ffffff;
+			padding: 0px 30px 0px 30px;
+			.login_title{
+				display: inline-block;
+				height: 64px;
+				width: 290px;
+				color: #333333;
+				font-size: 14px;
+				text-align: center;
+				line-height: 64px;
+				border-bottom: 1px solid #f2f2f2;
+				margin: 0px;
+			}
+			.login_input{
+				width: 48px;
+				height: 42px;
+				background: #fafafc url("../images/username.png") no-repeat 10px 8px;
+				margin-top: 16px;
+				input{
+					width: 242px;
+					height: 40px;
+					border:0px;
+					outline: none;
+					background: #fafafc;
+					margin-left: 48px;
+					font-size: 18px;
+					color: #bbbbbb;
+				}
+			}
+			.login_password{
+				background: #fafafc url("../images/password.png") no-repeat 10px 8px;
+			}
+			.login_submit{
+				margin-top: 16px;
+				color: #ffffff;
+				cursor: pointer;
+				line-height: 42px;
+				text-align: center;
+				@include g-button(#ff605f,#ff7849, 290px);
+				height: 42px;
+			}
+		}
+		.login_glod{
+			width: 373px;
+			height: 240px;
+			background-image: url("../images/login_glod.png");
+			position: absolute;
+			top: -78px;
+		    z-index: -1;
+		    left: -16px;
+		}
+	}
+}

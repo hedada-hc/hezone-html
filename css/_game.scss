@@ -294,6 +294,7 @@
 
 		.game_luck{
 			width: 920px;
+			height: 600px;
 			table{
 				width: 920px;
 				color: #777777;
@@ -600,14 +601,20 @@
 				}
 
 				.game_ranking_no1{
+					margin-left: 5px;
+					float: left;
 					@include paiming(1);
 				}
 
 				.game_ranking_no2{
+					margin-left: 5px;
+					float: left;
 					@include paiming(2);
 				}
 
 				.game_ranking_no3{
+					margin-left: 5px;
+					float: left;
 					@include paiming(3);
 				}
 			}

@@ -14,7 +14,8 @@ var v = new Vue({
 			{"title":"测试弹幕系统啊","nick":"hezone","jinbi":123541325,"headPic":"./images/headPic.jpg","type":0},
 		],
 		left:0,
-		time:90
+		time:90,
+		closeLogin:true
 	},
 	mounted:function(){
 		setInterval(this.lottorTime,1000)
@@ -27,10 +28,8 @@ var v = new Vue({
 			}else{
 				this.time -= 1;
 			}
-			
 		},
 		danmu:function(){
-			
 			if($(".game_danmu_content ul").width() > Math.abs(this.left)){
 				this.left -= 10;
 				$(".game_danmu_content ul").animate({"left": this.left + "px"})
@@ -40,7 +39,10 @@ var v = new Vue({
 				this.left -= 10;
 				$(".game_danmu_content ul").animate({"left": this.left + "px"})
 			}
-			
+		},
+		login:function(){
+			this.closeLogin = this.closeLogin ? false : true ;
+			this.closeLogin ? $(".login").hide() : $(".login").show();
 		}
 	}
 })
