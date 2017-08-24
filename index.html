@@ -32,7 +32,7 @@
 			</div>
 			<span class="login_glod"></span>
 		</div>
-	</div>
+	</div>	
 
 <!-- 头部开始 -->
 	<nav class="head">
@@ -139,6 +139,16 @@
 
 			<!-- 弹幕区域 -->
 			<div class="game_danmu">
+				<div class="game_danmu_tanchuang">
+					<div class="game_danmu_title">鱼丸弹幕系统</div>
+					<textarea placeholder="这里输入弹幕内容20字以内！还可以发红包哟" @click="textarea"></textarea>
+					<div class="game_danmu_nav">
+						
+					</div>
+				</div>
+				<div class="game_mask" @click="hide">
+					
+				</div>
 				<div class="game_danmu_block"></div>
 				<div class="game_danmu_tag">
 					鱼丸弹幕
@@ -168,7 +178,7 @@
 
 					</ul>
 				</div>
-				<div class="game_danmu_send">
+				<div class="game_danmu_send" @click="sendDanMu">
 					发送弹幕
 				</div>
 

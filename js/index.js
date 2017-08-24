@@ -43,6 +43,17 @@ var v = new Vue({
 		login:function(){
 			this.closeLogin = this.closeLogin ? false : true ;
 			this.closeLogin ? $(".login").hide() : $(".login").show();
+		},
+		sendDanMu:function(){
+			$(".game_mask").show();
+			$(".game_danmu_tanchuang").show();
+		},
+		hide:function(){
+			$(".game_mask").hide();
+			$(".game_danmu_tanchuang").hide();
+		},
+		textarea:function(){
+			$("textarea").attr("style","color:#000000;font-size:16px;");
 		}
 	}
 })

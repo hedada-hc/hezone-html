@@ -186,7 +186,51 @@
 				font-size: 14px;
 				float: left;
 			}
-
+			.game_danmu_tanchuang{
+				display: none;
+				position: absolute;
+				z-index: 100001;
+				width: 406px;
+				height: 426px;
+				background:#f6f6f6;
+				left: 38%;
+    			top: 250px;
+				.game_danmu_title{
+					height: 40px;
+					width: 100%;
+					color: #ffffff;
+					font-size: 14px;
+					background: linear-gradient(to left, #ff7849, #ff605f);
+					text-align: center;
+					line-height: 40px;
+				}
+				textarea{
+					height: 124px;
+					width: 390px;
+					background: #ffffff;
+					color: #bfbfbf;
+					resize: none;
+					border: none;
+					outline: none;
+					padding: 8px;
+				}
+				.game_danmu_nav{
+					width: 390px;
+					height: 28px;
+					padding: 8px;
+					border-bottom: 1px solid #ededed;
+				}
+			}
+			.game_mask{
+				background:rgba(0,0,0,0.5);
+				display: none;
+				position: absolute;
+				z-index:100000;
+				width: 100%;
+				height: 100%;
+				left: 0px;
+				top: 0px;
+			}
 			.game_danmu_content{
 				overflow: hidden;
 				position: relative;
