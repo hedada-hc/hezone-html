@@ -15,7 +15,15 @@ var v = new Vue({
 		],
 		left:0,
 		time:90,
-		closeLogin:true
+		closeLogin:true,
+		DM:{
+			"DMtext":'',
+			"DMHBje":null,
+			"DMHBnum":null
+		}
+		
+		
+		
 	},
 	mounted:function(){
 		setInterval(this.lottorTime,1000)
@@ -54,6 +62,20 @@ var v = new Vue({
 		},
 		textarea:function(){
 			$("textarea").attr("style","color:#000000;font-size:16px;");
+		},
+		showHB:function(){
+			if($(".game_danmu_sendhb").attr("style") == "display: block;"){
+				$(".icon_hb").css({"color":"#afafaf"});
+				$(".game_danmu_sendhb").hide();
+				$(".game_danmu_sendDM").text("发送弹幕");
+			}else{
+				$(".icon_hb").css({"color":"#ff8765"});
+				$(".game_danmu_sendhb").show();
+				$(".game_danmu_sendDM").text("发送红包弹幕");
+			}
+		},
+		sendDM:function(){
+			console.log(this.DM)
 		}
 	}
 })

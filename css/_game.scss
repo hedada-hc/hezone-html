@@ -187,11 +187,11 @@
 				float: left;
 			}
 			.game_danmu_tanchuang{
+				-webkit-transition: height 2s;
 				display: none;
 				position: absolute;
 				z-index: 100001;
 				width: 406px;
-				height: 426px;
 				background:#f6f6f6;
 				left: 38%;
     			top: 250px;
@@ -213,12 +213,87 @@
 					border: none;
 					outline: none;
 					padding: 8px;
+					font-size: 16px;
 				}
 				.game_danmu_nav{
 					width: 390px;
 					height: 28px;
 					padding: 8px;
 					border-bottom: 1px solid #ededed;
+					.icon{
+						color: #afafaf;
+						width: 22px;
+						height: 22px;
+					}
+					.icon:nth-child(1){
+						cursor: pointer;
+					}
+					.icon:nth-child(1):hover{
+						color: #ff8765;
+					}
+				}
+				.game_danmu_sendhb{
+					position: relative;
+					border-bottom: 1px solid #ededed;
+					display: none;
+					input::-webkit-outer-spin-button,
+					input::-webkit-inner-spin-button {
+					    -webkit-appearance: none !important;
+					    margin: 0;
+					}
+					input{
+						border: none;
+						outline: none;
+						height: 22px;
+						font-size: 14px;
+						color: #333333;
+						border-radius: 4px;
+    					box-shadow: 0px 2px 12px #e6e6e6;
+    					padding: 10px;
+					}
+					input:nth-child(1){
+						width: 200px;
+						margin: 24px 10px 0 26px;
+					}
+					input:nth-child(2){
+						width: 100px;
+					}
+
+					.icon{
+						display: block;
+						color: #ff8765;
+						width: 22px;
+						height: 22px;
+						position: absolute;
+						top: 34px;
+    					right: 170px;
+					}
+					p{
+						text-align: center;
+						color: #666666;
+						font-size: 14px;
+						margin: 0px;
+						line-height: 35px;
+						margin-top: 10px;
+					}
+					span{
+						margin: 0px;
+						display: block;
+						color: #ff7800;
+						font-size: 12px;
+						line-height: 18px;
+						text-align: center;
+						margin-bottom: 10px;
+					}
+				}
+
+				.game_danmu_sendDM{
+					margin: 12px auto;
+					color: #ffffff;
+					cursor: pointer;
+					text-align: center;
+					line-height: 30px;
+					@include g-button(#ff605f,#ff7849, 150px);
 				}
 			}
 			.game_mask{

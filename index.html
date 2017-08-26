@@ -9,7 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/layer.js"></script>
-	
+	<script type="text/javascript" src="./font/iconfont.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
@@ -141,10 +149,22 @@
 			<div class="game_danmu">
 				<div class="game_danmu_tanchuang">
 					<div class="game_danmu_title">鱼丸弹幕系统</div>
-					<textarea placeholder="这里输入弹幕内容20字以内！还可以发红包哟" @click="textarea"></textarea>
+					<textarea v-model="DM.DMtext" placeholder="这里输入弹幕内容20字以内！还可以发红包哟" @click="textarea"></textarea>
 					<div class="game_danmu_nav">
-						
+						<svg class="icon icon_hb" aria-hidden="true" @click="showHB">
+						  <use xlink:href="#icon-hongbao1"></use>
+						</svg>
 					</div>
+					<div class="game_danmu_sendhb">
+						<input v-model="DM.DMHBje" type="number" min="1" max="10" name="jinbi" placeholder="Now，打算发多少红包呢？">
+						<input v-model="DM.DMHBnum" type="number" name="num" placeholder="多少人分？">
+						<svg class="icon" aria-hidden="true">
+						  <use xlink:href="#icon-jinbi3"></use>
+						</svg>
+						<p>红包金额最低100金币起，最高500,000金币，最低2人分</p>
+						<span>严厉打击利用红包系统刷注册金币，系统实时监控发现封号</span>
+					</div>
+					<div class="game_danmu_sendDM" @click="sendDM">发送弹幕</div>
 				</div>
 				<div class="game_mask" @click="hide">
 					
@@ -510,7 +530,42 @@
 	<div class="footer_top">
 		<div class="footer_top_content">
 			<div class="footer_content">
-				<a href=""></a>
+				<ul>
+					<li>
+						<a href=""></a>
+					</li>
+					<li>
+						<a>yuwanmao</a>
+						<span>扫一扫关注鱼丸微信</span>
+						<span>每日红包领到手发抖</span>
+					</li>
+					<li>
+						<p>友情链接/合作伙伴</p>
+						<nav>
+							<a target="_black" href="http://www.pceggs.com/">PC蛋蛋</a>
+							<a target="_black" href="http://www.juxiangyou.com/">聚享游</a>
+							<a target="_black" href="http://www.kuailezhuan.com/">快乐赚</a>
+							<a target="_black" href="http://www.ttz.com/">天天赚</a>
+							<a target="_black" href="http://www.ji7.com/">集趣网</a>
+							<a target="_black" href="http://www.pceggs.com/">豆包网</a>
+							<a target="_black" href="http://www.pceggs.com/">乐途网</a>
+							<a target="_black" href="http://www.pceggs.com/">聚宝箱</a>
+							<a target="_black" href="http://www.pceggs.com/">7U网</a>
+							<a target="_black" href="http://www.pceggs.com/">网易联盟</a>
+							<a target="_black" href="http://www.yuwanmao.com/">鱼丸猫</a>
+						</nav>
+					</li>
+					<li>
+						<nav>
+							<a target="_black" href="http://www.yuwanmao.com/hezuo">商务合作</a>
+							<a target="_black" href="http://www.yuwanmao.com/daili">合作代理</a>
+							<a target="_black" href="http://www.yuwanmao.com/im">联系我们</a>
+							<a target="_black" href="http://www.yuwanmao.com/guanyu">关于大鱼</a>
+						</nav>
+					</li>
+				</ul>
+				
+
 			</div>
 		</div>
 	</div>
