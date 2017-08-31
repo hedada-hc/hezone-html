@@ -71,6 +71,135 @@
 			}
 		}
 
+		.game_zoushi{
+			display: block;
+			float: left;
+			table{
+				width: 926px;
+				tr:nth-child(1){
+					box-shadow: 0px 3px 25px #f1f1f1;
+				}
+				tr{
+					display: block;
+					height: 32px;
+					border-bottom: 1px solid #e8f0f5;
+					th{
+						padding:0px;
+						width: 22px;
+						height: 22px;
+						font-size: 10px;
+						color: #505e70;
+						font-weight: 100;
+						span{
+							display: block;
+							background-color: #6adb7c;
+							width: 8px;
+							height: 8px;
+							border-radius: 10px;
+							float: left;
+							margin-top: 4px;
+    						margin-left: 14px;
+						}
+					}
+
+					th:nth-child(1){
+						width: 62px;
+					}
+					th,td{
+						.game_zoushi_dan{
+							background: linear-gradient(to left, #cb60f9 , #f378e7);
+						}
+						.game_zoushi_shuang{
+							background: linear-gradient(to left, #60be5f , #69cc4d);
+						}
+						.game_zoushi_da{
+							background: linear-gradient(to left, #fbb607 , #fed82b);
+						}
+						.game_zoushi_xiao{
+							background: linear-gradient(to left, #f77050 , #fd9241);
+						}
+						.game_zoushi_zhong{
+							background: linear-gradient(to left, #1899fb , #27cdfe);
+						}
+						.game_zoushi_bian{
+							background: linear-gradient(to left, #f87b89 , #fe8887);
+						}
+					}
+
+					td{
+						padding:0px;
+						width: 22px;
+						height: 22px;
+						font-size: 10px;
+						color: #505e70;
+						font-weight: 100;
+					}
+
+					td:nth-child(1){
+						width: 62px;
+						text-align: center;
+						margin-top: 8px;
+					}
+
+					td{
+						float: left;
+						margin-top: -8px;
+    					margin-right: 2px;
+						span{
+							background-color: #509afe;
+						}
+						p{
+							display: none;
+							width: 22px;
+							height: 22px;
+							border-radius: 22px;
+							color: #ffffff;
+							text-align: center;
+							line-height: 22px;
+						}
+						.game_zoushi_check{
+							display: inline-block;
+						}
+						.game_zoushi_num{
+							background: linear-gradient(to left, #4e99fe , #64a5ff);
+						}
+						.game_zoushi_num_select{
+							background: linear-gradient(to left, #ff665a , #ff734e);
+						}
+					}
+				}
+
+				tr:nth-child(2){
+					th{
+						float: left;
+						margin-top: -8px;
+    					margin-right: 2px;
+						span{
+							background-color: #509afe;
+						}
+						p{
+							display: inline-block;
+							width: 22px;
+							height: 22px;
+							border-radius: 22px;
+							color: #ffffff;
+							text-align: center;
+							line-height: 22px;
+						}
+						.game_zoushi_num{
+							background: linear-gradient(to left, #4e99fe , #64a5ff);
+						}
+						.game_zoushi_num_select{
+							background: linear-gradient(to left, #ff665a , #ff734e);
+						}
+					}
+					th:nth-child(1){
+						margin-top: 8px;
+					}
+				}
+			}
+		}
+
 		.game_time{
 			width: 926px;
 			height: 105px;
@@ -413,9 +542,45 @@
 
 		.game_luck{
 			width: 920px;
-			height: 600px;
+			height: 1020px;
+			.game_page{
+				display: block;
+				width: 420px;
+				height: 34px;
+				margin: 20px auto;
+				box-shadow: 0px 0px 6px #ece9e9;
+				border-radius: 24px;
+				li:last-of-type{
+					border-radius: 24px;
+					border-right: none;
+				}
+				li{
+					display: block;
+					float: left;
+					width: 34px;
+					height: 34px;
+					text-align: center;
+					border-right: 1px solid #f4f4f4;
+
+					a{
+						line-height: 34px;
+						display: block;
+						color: #7b7b7b;
+					}
+					a:hover{
+						background:linear-gradient(to left, #ff7849, #ff605f);
+						color: #ffffff;
+					}
+					.game_page_select{
+						background:linear-gradient(to left, #ff7849, #ff605f);
+						color: #ffffff;
+					}
+				}
+			}
 			table{
 				width: 920px;
+				height: 920px;
+				overflow: hidden;
 				color: #777777;
 				font-size: 14px;
 				tr{

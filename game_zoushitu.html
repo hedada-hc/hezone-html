@@ -111,298 +111,128 @@
 			<div class="game_isn">
 				<ins></ins>
 			</div>
-			<!-- 开奖时间区域 -->
-			<div class="game_time">
-				<div class="game_time_left">
-					<div class="game_time_left_pic"></div>
-					<div class="game_time_info">
-						<div class="game_time_info_text">
-							第 <span class="game_time_info_qihao">758195</span> 期 离竞猜截止时间，还有 <span class="game_time_info_mm">{{time}}</span> 秒
-						</div>
-						<a href="http://www.yuwanmao.com/vip" target="_black" class="game_time_info_vip">
-							开通砖石VIP，领取866万金币
-						</a>
-					</div>
-				</div>
-				<div class="game_time_right">
-					<div class="game_time_member">
-						<span class="game_time_member_title">第 <span>758194</span> 期最强王者</span>
-						<img width="36" src="./images/headPic.jpg">
-						<div class="game_time_member_info">
-							<span>河里浪</span>
-							<span>纯亏盈:<span class="game_time_shou">234,561,789</span></span>
-						</div>
-					</div>
-
-					<div class="game_time_member">
-						<span class="game_time_member_title">第 <span>758194</span> 期倔强青铜</span>
-						<img width="36" src="./images/headPic2.gif">
-						<div class="game_time_member_info">
-							<span>河里浪</span>
-							<span>纯亏盈:<span class="game_time_kui">-234,561,789</span></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- 弹幕区域 -->
-			<div class="game_danmu">
-				<div class="game_danmu_tanchuang">
-					<div class="game_danmu_title">鱼丸弹幕系统</div>
-					<textarea v-model="DM.DMtext" placeholder="这里输入弹幕内容20字以内！还可以发红包哟" @click="textarea"></textarea>
-					<div class="game_danmu_nav">
-						<svg class="icon icon_hb" aria-hidden="true" @click="showHB">
-						  <use xlink:href="#icon-hongbao1"></use>
-						</svg>
-					</div>
-					<div class="game_danmu_sendhb">
-						<input v-model="DM.DMHBje" type="number" min="1" max="10" name="jinbi" placeholder="Now，打算发多少红包呢？">
-						<input v-model="DM.DMHBnum" type="number" name="num" placeholder="多少人分？">
-						<svg class="icon" aria-hidden="true">
-						  <use xlink:href="#icon-jinbi3"></use>
-						</svg>
-						<p>红包金额最低100金币起，最高500,000金币，最低2人分</p>
-						<span>严厉打击利用红包系统刷注册金币，系统实时监控发现封号</span>
-					</div>
-					<div class="game_danmu_sendDM" @click="sendDM">发送弹幕</div>
-				</div>
-				<div class="game_mask" @click="hide">
-					
-				</div>
-				<div class="game_danmu_block"></div>
-				<div class="game_danmu_tag">
-					鱼丸弹幕
-				</div>
-				<div class="game_danmu_content">
-					<ul>
-
-						<li v-for="danmus in danmuData">
-							<a href="http://www.yuwanmao.com/member/136411">
-								<img width="32" :src="danmus.headPic">
-								<div class="game_danmu_content_msg">
-									<span>{{danmus.title}}</span>
-									<span class="game_danmu_name">{{danmus.nick}}  <p>盈利：13,561,210</p></span>
-								</div>
-							</a>
-						</li>
-
-
-						<li class="game_danmu_hongbao_border">
-							<a href="http://www.yuwanmao.com/member/136411">
-								<img width="32" src="./images/headPic2.gif">
-								<div class="game_danmu_content_msg game_danmu_hongbao">
-									<span>今天赚了很多来一波红包给你们</span>
-								</div>
-							</a>
-						</li>
-
-					</ul>
-				</div>
-				<div class="game_danmu_send" @click="sendDanMu">
-					发送弹幕
-				</div>
-
-			</div>
-
-
-			<!-- 竞猜列表区域 -->
-			<div class="game_luck">
+			<!-- 走势图 -->
+			<div class="game_zoushi">
 				<table>
-				  <tr>
-				    <th>竞猜期号</th>
-				    <th>开奖时间</th>
-				    <th>竞猜结果</th>
-				    <th>金币总数</th>
-				    <th>中奖人数</th>
-				    <th>收入/投入</th>
-				    <th>竞猜</th>
-				  </tr>
 					<tr>
-					    <td>758205</td>
-					    <td>07-27 16:56</td>
-					    <td><span class="game_luck_num game_luck_x">?</span></td>
-					    <td>3,000,000,000</td>
-					    <td class="game_luck_zhong">0</td>
-					    <td>
-					    	<span class="game_luck_shou">收:0</span>
-					    	<span>竟:0</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_jing">竞猜</div> 
-					    </td>
+						<th><span></span>次数</th>
+						<th>0</th>
+						<th>2</th>
+						<th>0</th>
+						<th>3</th>
+						<th>7</th>
+						<th>9</th>
+						<th>15</th>
+						<th>20</th>
+						<th>13</th>
+						<th>28</th>
+						<th>31</th>
+						<th>39</th>
+						<th>40</th>
+						<th>33</th>
+						<th>30</th>
+						<th>44</th>
+						<th>31</th>
+						<th>29</th>
+						<th>29</th>
+						<th>29</th>
+						<th>24</th>
+						<th>16</th>
+						<th>12</th>
+						<th>10</th>
+						<th>4</th>
+						<th>2</th>
+						<th>0</th>
+						<th>1</th>
+						<th>266</th>
+						<th>266</th>
+						<th>266</th>
+						<th>266</th>
+						<th>266</th>
+						<th>266</th>
 					</tr>
-
 					<tr>
-					    <td>758204</td>
-					    <td>07-27 16:54</td>
-					    <td><span class="game_luck_num game_luck_x">?</span></td>
-					    <td>3,000,000,000</td>
-					    <td class="game_luck_zhong">0</td>
-					    <td>
-					    	<span class="game_luck_shou">收:0</span>
-					    	<span>竟:0</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_jing">竞猜</div> 
-					    </td>
+						<th><span></span>期号</th>
+						<th><p class="game_zoushi_num">00</p></th>
+						<th><p class="game_zoushi_num">01</p></th>
+						<th><p class="game_zoushi_num">02</p></th>
+						<th><p class="game_zoushi_num">03</p></th>
+						<th><p class="game_zoushi_num">04</p></th>
+						<th><p class="game_zoushi_num">05</p></th>
+						<th><p class="game_zoushi_num">06</p></th>
+						<th><p class="game_zoushi_num">07</p></th>
+						<th><p class="game_zoushi_num">08</p></th>
+						<th><p class="game_zoushi_num">09</p></th>
+						<th><p class="game_zoushi_num_select">10</p></th>
+						<th><p class="game_zoushi_num_select">11</p></th>
+						<th><p class="game_zoushi_num_select">12</p></th>
+						<th><p class="game_zoushi_num_select">13</p></th>
+						<th><p class="game_zoushi_num_select">14</p></th>
+						<th><p class="game_zoushi_num_select">15</p></th>
+						<th><p class="game_zoushi_num_select">16</p></th>
+						<th><p class="game_zoushi_num_select">17</p></th>
+						<th><p class="game_zoushi_num">18</p></th>
+						<th><p class="game_zoushi_num">19</p></th>
+						<th><p class="game_zoushi_num">20</p></th>
+						<th><p class="game_zoushi_num">21</p></th>
+						<th><p class="game_zoushi_num">22</p></th>
+						<th><p class="game_zoushi_num">23</p></th>
+						<th><p class="game_zoushi_num">24</p></th>
+						<th><p class="game_zoushi_num">25</p></th>
+						<th><p class="game_zoushi_num">26</p></th>
+						<th><p class="game_zoushi_num">27</p></th>
+						<th><p class="game_zoushi_dan">单</p></th>
+						<th><p class="game_zoushi_shuang">双</p></th>
+						<th><p class="game_zoushi_da">大</p></th>
+						<th><p class="game_zoushi_xiao">小</p></th>
+						<th><p class="game_zoushi_zhong">中</p></th>
+						<th><p class="game_zoushi_bian">边</p></th>
 					</tr>
+					<tr v-for="(item,index) in zoushitu">
+						<td><span></span>{{item.qihao}}</td>
+						<td><p :class="item.num == 0 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">00</p></td>
+						<td><p :class="item.num == 1 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">01</p></td>
+						<td><p :class="item.num == 2 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">02</p></td>
+						<td><p :class="item.num == 3 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">03</p></td>
+						<td><p :class="item.num == 4 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">04</p></td>
+						<td><p :class="item.num == 5 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">05</p></td>
+						<td><p :class="item.num == 6 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">06</p></td>
+						<td><p :class="item.num == 7 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">07</p></td>
+						<td><p :class="item.num == 8 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">08</p></td>
+						<td><p :class="item.num == 9 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">09</p></td>
+						<td><p :class="item.num == 10 ? 'game_zoushi_num_select game_zoushi_check' : 'game_zoushi_num_select'">10</p></td>
+						<td><p :class="item.num == 11 ? 'game_zoushi_num_select game_zoushi_check' : 'game_zoushi_num_select'">11</p></td>
+						<td><p :class="item.num == 12 ? 'game_zoushi_num_select game_zoushi_check' : 'game_zoushi_num_select'">12</p></td>
+						<td><p :class="item.num == 13 ? 'game_zoushi_num_select game_zoushi_check' : 'game_zoushi_num_select'">13</p></td>
+						<td><p :class="item.num == 14 ? 'game_zoushi_num_select game_zoushi_check' : 'game_zoushi_num_select'">14</p></td>
+						<td><p :class="item.num == 15 ? 'game_zoushi_num_select game_zoushi_check' : 'game_zoushi_num_select'">15</p></td>
+						<td><p :class="item.num == 16 ? 'game_zoushi_num_select game_zoushi_check' : 'game_zoushi_num_select'">16</p></td>
+						<td><p :class="item.num == 17 ? 'game_zoushi_num_select game_zoushi_check' : 'game_zoushi_num_select'">17</p></td>
+						<td><p :class="item.num == 18 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">18</p></td>
+						<td><p :class="item.num == 19 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">19</p></td>
+						<td><p :class="item.num == 20 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">20</p></td>
+						<td><p :class="item.num == 21 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">21</p></td>
+						<td><p :class="item.num == 22 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">22</p></td>
+						<td><p :class="item.num == 23 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">23</p></td>
+						<td><p :class="item.num == 24 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">24</p></td>
+						<td><p :class="item.num == 25 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">25</p></td>
+						<td><p :class="item.num == 26 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">26</p></td>
+						<td><p :class="item.num == 27 ? 'game_zoushi_num game_zoushi_check' : 'game_zoushi_num'">27</p></td>
+						
+						<td><p :class="isdanshuang(item.num) == '单' ? 'game_zoushi_dan game_zoushi_check' : 'game_zoushi_dan'">单</p></td>
+						<td><p :class="isdanshuang(item.num) == '双' ? 'game_zoushi_shuang game_zoushi_check' : 'game_zoushi_shuang'">双</p></td>
 
-					<tr>
-					    <td>758203</td>
-					    <td>07-27 16:53</td>
-					    <td><span class="game_luck_num game_luck_x">?</span></td>
-					    <td>3,000,000,000</td>
-					    <td class="game_luck_zhong">0</td>
-					    <td>
-					    	<span class="game_luck_shou">收:0</span>
-					    	<span>竟:0</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_jing">竞猜</div> 
-					    </td>
+						<td><p :class="isdaxiao(item.num) == '大' ? 'game_zoushi_da game_zoushi_check' : 'game_zoushi_da'">大</p></td>
+						<td><p :class="isdaxiao(item.num) == '小' ? 'game_zoushi_xiao game_zoushi_check' : 'game_zoushi_xiao'">小</p></td>
+
+						<td><p :class="iszhongbian(item.num) == '中' ? 'game_zoushi_zhong game_zoushi_check' : 'game_zoushi_zhong'">中</p></td>
+						<td><p :class="iszhongbian(item.num) == '边' ? 'game_zoushi_bian game_zoushi_check' : 'game_zoushi_bian'">边</p></td>
 					</tr>
-
-					<tr>
-					    <td>758202</td>
-					    <td>07-27 16:51</td>
-					    <td><span class="game_luck_num game_luck_x">?</span></td>
-					    <td>3,000,000,000</td>
-					    <td class="game_luck_zhong">0</td>
-					    <td>
-					    	<span class="game_luck_shou">收:0</span>
-					    	<span>竟:0</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_jing">竞猜</div> 
-					    </td>
-					</tr>
-
-					<tr>
-					    <td>758201</td>
-					    <td>07-27 16:50</td>
-					    <td><span class="game_luck_num game_luck_x">?</span></td>
-					    <td>3,000,000,000</td>
-					    <td class="game_luck_zhong">0</td>
-					    <td>
-					    	<span class="game_luck_shou">收:0</span>
-					    	<span>竟:0</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_jing">竞猜</div> 
-					    </td>
-					</tr>
-
-					
-					<tr>
-					    <td>758200</td>
-					    <td>07-27 16:48</td>
-					    <td>1+2+9=<span class="game_luck_num">12</span></td>
-					    <td>25,351,631,112</td>
-					    <td class="game_luck_zhong"><a href="#">891</a></td>
-					    <td>
-					    	<span class="game_luck_shou">收:24,531,971</span>
-					    	<span>竟:2,000,000</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_yikai">已开</div> 
-					    </td>
-				  	</tr>
-
-				  	<tr>
-					    <td>758200</td>
-					    <td>07-27 16:48</td>
-					    <td>1+2+9=<span class="game_luck_num">12</span></td>
-					    <td>25,351,631,112</td>
-					    <td class="game_luck_zhong"><a href="#">891</a></td>
-					    <td>
-					    	<span class="game_luck_shou">收:24,531,971</span>
-					    	<span>竟:2,000,000</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_yikai">已开</div> 
-					    </td>
-				  	</tr>
-
-				  	<tr>
-					    <td>758200</td>
-					    <td>07-27 16:48</td>
-					    <td>1+2+9=<span class="game_luck_num">12</span></td>
-					    <td>25,351,631,112</td>
-					    <td class="game_luck_zhong"><a href="#">891</a></td>
-					    <td>
-					    	<span class="game_luck_shou">收:24,531,971</span>
-					    	<span>竟:2,000,000</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_yikai">已开</div> 
-					    </td>
-				  	</tr>
-
-				  	<tr>
-					    <td>758200</td>
-					    <td>07-27 16:48</td>
-					    <td>1+2+9=<span class="game_luck_num">12</span></td>
-					    <td>25,351,631,112</td>
-					    <td class="game_luck_zhong"><a href="#">891</a></td>
-					    <td>
-					    	<span class="game_luck_shou">收:24,531,971</span>
-					    	<span>竟:2,000,000</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_yikai">已开</div> 
-					    </td>
-				  	</tr>
-
-				  	<tr>
-					    <td>758200</td>
-					    <td>07-27 16:48</td>
-					    <td>1+2+9=<span class="game_luck_num">12</span></td>
-					    <td>25,351,631,112</td>
-					    <td class="game_luck_zhong"><a href="#">891</a></td>
-					    <td>
-					    	<span class="game_luck_shou">收:24,531,971</span>
-					    	<span>竟:2,000,000</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_yikai">已开</div> 
-					    </td>
-				  	</tr>
-
-				  	<tr>
-					    <td>758200</td>
-					    <td>07-27 16:48</td>
-					    <td>1+2+9=<span class="game_luck_num">12</span></td>
-					    <td>25,351,631,112</td>
-					    <td class="game_luck_zhong"><a href="#">891</a></td>
-					    <td>
-					    	<span class="game_luck_shou">收:24,531,971</span>
-					    	<span>竟:2,000,000</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_yikai">已开</div> 
-					    </td>
-				  	</tr>
-
-				  	<tr>
-					    <td>758200</td>
-					    <td>07-27 16:48</td>
-					    <td>1+2+9=<span class="game_luck_num">12</span></td>
-					    <td>25,351,631,112</td>
-					    <td class="game_luck_zhong"><a href="#">891</a></td>
-					    <td>
-					    	<span class="game_luck_shou">收:24,531,971</span>
-					    	<span>竟:2,000,000</span>
-					    </td>
-					    <td>
-					    	<div class="game_luck_btn_yikai">已开</div> 
-					    </td>
-				  	</tr>
-					
 				</table>
 			</div>
+		
 		</div>
-
-		<!-- 个人信息区 -->
+		<!-- 个人信息区 17132047526 -->
 		<div class="game_member">
 			<div class="game_member_info">
 				<div class="game_member_info_head"></div>

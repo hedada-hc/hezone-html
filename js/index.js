@@ -20,10 +20,32 @@ var v = new Vue({
 			"DMtext":'',
 			"DMHBje":null,
 			"DMHBnum":null
-		}
-		
-		
-		
+		},
+		gameData:[
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":null,"num2":null,"num3":null,"res":null,"zhong":0,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":null,"num2":null,"num3":null,"res":null,"zhong":0,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":null,"num2":null,"num3":null,"res":null,"zhong":0,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":null,"num2":null,"num3":null,"res":null,"zhong":0,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":null,"num2":null,"num3":null,"res":null,"zhong":0,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":7,"num2":4,"num3":5,"res":16,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":7,"num2":2,"num3":6,"res":15,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":1,"num2":9,"num3":2,"res":12,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":4,"num2":0,"num3":6,"res":10,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":1,"num2":9,"num3":2,"res":12,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":0,"num2":3,"num3":6,"res":9,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":1,"num2":9,"num3":2,"res":12,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":1,"num2":9,"num3":2,"res":12,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":4,"num2":3,"num3":2,"res":9,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":7,"num2":9,"num3":2,"res":18,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":7,"num2":4,"num3":5,"res":16,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":7,"num2":2,"num3":6,"res":15,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":1,"num2":9,"num3":2,"res":12,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":4,"num2":0,"num3":6,"res":10,"zhong":657,"shou":0},
+			{"qihao":758205,"time":"07-27 16:56","jine":"3,000,000,000","num1":1,"num2":9,"num3":2,"res":12,"zhong":657,"shou":0},
+		],
+		zoushitu:[
+			{"num":12, "qihao":807155},{"num":22, "qihao":807154},{"num":8, "qihao":807153},{"num":9, "qihao":807152},{"num":16, "qihao":807151},{"num":25, "qihao":807150},{"num":7, "qihao":807149},{"num":10, "qihao":807148},{"num":13, "qihao":807147},{"num":19, "qihao":807146},{"num":7, "qihao":807145},{"num":7, "qihao":807144},{"num":3, "qihao":807143},{"num":16, "qihao":807142}
+		]		
 	},
 	mounted:function(){
 		setInterval(this.lottorTime,1000)
@@ -76,6 +98,24 @@ var v = new Vue({
 		},
 		sendDM:function(){
 			console.log(this.DM)
+		},
+		isdanshuang(num){
+			if(num % 2){
+				return "双";
+			}
+			return "单";
+		},
+		isdaxiao(num){
+			if(num > 13){
+				return "大";
+			}
+			return "小";
+		},
+		iszhongbian(num){
+			if(num > 9 && num <= 17){
+				return "中";
+			}
+			return "边";
 		}
 	}
 })
