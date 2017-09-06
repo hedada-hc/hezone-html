@@ -1,0 +1,132 @@
+@charset "utf-8";
+.register{
+	width:1000px;
+	height:458px;
+	background: #ffffff;
+	margin: 0 auto;
+	box-shadow: 0px 0px 14px #dedede;
+	.register_ad{
+		width: 660px;
+		float: left;
+		.register_ad_title{
+			text-align: left;
+			line-height: 78px;
+			padding-left: 26px;
+			color: #979797;
+			height: 48px;
+			overflow: hidden;
+			margin-top: 0px;
+		}
+		ul{
+			margin-left: 26px;
+			li{
+				margin-right: 14px;
+				width: 144px;
+				float: left;
+				margin-bottom: 20px;
+				img{
+					width: 30px;
+					height: 30px;
+					display: block;
+					border-radius: 20px;
+					float: left;
+					margin-right: 5px;
+					margin-top: 5px;
+				}
+				span{
+					color: #999999;
+					font-size: 14px;
+					float: left;
+				}
+				.register_ad_time{
+					color: #c4c4c4;
+				}
+				p{
+					float: left;
+					margin: 0px;
+					color: #ff6000;
+					font-size: 14px;
+				}
+			}
+		}
+		.register_ad_banner{
+			width: 624px;
+			height: 182px;
+			float: left;
+	    	margin-left: 26px;
+	    	margin-top: 16px;
+		}
+	}
+
+	.register_reg{
+		float: left;
+		width: 290px;
+		margin-left: 16px;
+		.register_reg_title{
+			color: #5b5b5b;
+			text-align: center;
+			line-height: 62px;
+			border-bottom: 1px solid #f2f2f2;
+		}
+		.register_reg_from{
+			background:#f9f9f9;
+			height: 42px;
+			margin: 10px 0px 10px 0px;
+			svg{
+				width: 26px;
+				height: 26px;
+				color: #bbbbbb;
+				float: left;
+				margin: 8px 0px 0px 6px;
+			}
+			input{
+				width: 238px;
+				outline: none;
+				border:none;
+				height: 22px;
+				background:#f9f9f9;
+				margin-bottom: 16px;
+				padding:10px;
+			}
+		}
+
+		.register_reg_code{
+			width: 160px;
+			float: left;
+			margin-top: 0px;
+			input{
+				width: 108px;
+			}
+		}
+
+		.register_reg_getcode{
+			border:none;
+			width: 118px;
+			height: 42px;
+			outline: none;
+			cursor: pointer;
+			float: left;
+			margin-left: 12px;
+			background: linear-gradient(to left, #2caafa , #27c5fe);
+			color: #ffffff;
+		}
+
+		.register_reg_iscode{
+			background: #f2f2f2;
+			color: #333333;
+		}
+
+		.register_register{
+			width: 290px;
+			border:none;
+			outline: none;
+			cursor: pointer;
+			float: left;
+			color: #ffffff;
+			border-radius: 20px;
+			@include g-button(#ff605f,#ff7849, 290px);
+			height: 38px;
+		}
+	}
+
+}
