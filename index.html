@@ -9,13 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/layer.js"></script>
-	<script type="text/javascript" src="./font/iconfont.js"></script>
     <style type="text/css">
         .icon {
-           width: 1em; height: 1em;
-           vertical-align: -0.15em;
-           fill: currentColor;
-           overflow: hidden;
+          /* 通过设置 font-size 来改变图标大小 */
+          width: 1em; height: 1em;
+          /* 图标和文字相邻时，垂直对齐 */
+          vertical-align: -0.15em;
+          /* 通过设置 color 来改变 SVG 的颜色/fill */
+          fill: currentColor;
+          /* path 和 stroke 溢出 viewBox 部分在 IE 下会显示
+             normalize.css 中也包含这行 */
+          overflow: hidden;
         }
     </style>
 </head>
@@ -50,7 +54,7 @@
 				<li>今日兑换金币: <span class="gloden">1,368,697,152</span></li>
 				<li class="head_top_right">牛人榜</li>
 				<li class="head_top_line"></li>
-				<li class="head_top_right">客服中心</li>
+				<li class="head_top_right">核橙商城</li>
 				<li class="head_top_line"></li>
 				<li class="head_top_right head_top_vip">VIP会员</li>
 				<li class="head_top_line"></li>
@@ -69,11 +73,11 @@
 					<li><a href="#">新人活动</a></li>
 					<li><a href="#">游戏试玩</a></li>
 					<li><a href="#">玩棋牌</a></li>
-					<li><a href="#">广告体验</a></li>
+					<li><a href="#">悬赏任务</a></li>
 					<li class="head_nav_select"><a href="#">娱乐大厅</a></li>
 					<li><a href="#">购物返利</a></li>
 					<li><a href="#">邀请好友</a></li>
-					<li><a href="#">兑换商城</a></li>
+					<li><a href="#">核橙商城</a></li>
 					<li class="head_nav_right"><a href="#">讨论区</a></li>
 					<li class="head_nav_right"><a href="#">晒奖</a></li>
 				</ul>
@@ -95,11 +99,11 @@
 		<div class="index_main_login">
 			<div class="index_main_head">
 				<a href="#" class="index_main_headPic">
-					<img src="./images/headPic.jpg">
+					<img src="./images/ico/head1.png">
 				</a>
 				<p class="index_main_head_tis">Hi，下午好</p>
 				<div class="index_main_head_vip">
-					<a href="#" class="index_main_head_vip_kt"><i></i>开通VIP，领取每日福利</a>
+					<a href="#" class="index_main_head_vip_kt"><img src="./images/ico/vip3.png">开通VIP，领取每日福利</a>
 					<p class="index_main_head_lingqu">6879人已领取</p>
 					<a href="#" class="index_main_head_tequan">尽显专属特权，每日福利，专属标识</a>
 				</div>
@@ -113,38 +117,38 @@
 					<p>使用其他方式登录，无需注册</p>
 					<div class="index_main_login_method">
 						<a href="#">
-							<img src="./images/head.gif">
+							<img src="./images/ico/wx.png">
 						</a>
 						<a href="#">
-							<img src="./images/head.gif">
+							<img src="./images/ico/wb.png">
 						</a>
 						<a href="#">
-							<img src="./images/head.gif">
+							<img src="./images/ico/QQ.png">
 						</a>
 					</div>
 				</div>
 				<ul class="index_main_router">
 					<li>
 						<a href="#">
-							<i></i>
+							<img src="./images/ico/luck28.png">
 							<span>幸运28</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<i></i>
+							<img src="./images/ico/vip.png">
 							<span>开通VIP</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<i></i>
+							<img src="./images/ico/game.png">
 							<span>游戏试玩</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<i></i>
+							<img src="./images/ico/shop.png">
 							<span>购物返利</span>
 						</a>
 					</li>
@@ -155,7 +159,7 @@
 		<div class="index_main_info">
 			<div class="index_main_info_info index_main_info_xuanshang">
 				<div class="index_main_info_title">
-					<i></i>
+					<img src="./images/ico/xuanshang.png">
 					<a href="#">最新发布的悬赏任务</a>
 				</div>
 				<ul class="index_main_info_list">
@@ -206,7 +210,7 @@
 			<i class="index_main_info_line"></i>
 			<div class="index_main_info_info index_main_info_dongtai">
 				<div class="index_main_info_title">
-					<i></i>
+					<img src="./images/ico/duihuan.png">
 					<a href="#">最新兑换/提现动态</a>
 				</div>
 				<ul class="index_main_info_list">
@@ -299,27 +303,193 @@
 			<i class="index_main_step_title">体验步骤</i>
 			<ul>
 				<li>
-					<i>1</i>
-					<span>新人注册</span>
-					<p>注册即奖励2元</p>
+					<i class="index_main_step_i">1</i>
+					<span class="index_main_step_steptitle">新人注册</span>
+					<p class="index_main_step_stepdesc">注册即奖励2元</p>
 					<i class="index_main_step_step">></i>
 				</li>
 				<li>
-					<i>2</i>
-					<span>完成任务</span>
-					<p>获得金币/赏金</p>
+					<i class="index_main_step_i">2</i>
+					<span class="index_main_step_steptitle">完成任务</span>
+					<p class="index_main_step_stepdesc">获得金币/赏金</p>
 					<i class="index_main_step_step">></i>
 				</li>
 				<li>
-					<i>3</i>
-					<span>金币提现</span>
-					<p>1000金币=1元</p>
+					<i class="index_main_step_i">3</i>
+					<span class="index_main_step_steptitle">金币提现</span>
+					<p class="index_main_step_stepdesc">10000金币=1元</p>
+				</li>
+				<li class="index_main_step_jinbi">
+					<img src="./images/ico/jinbi2.png">
+					<span>301,564,571,963</span>
+					<p>历史兑换金币总额</p>
+				</li>
+				<li class="index_main_step_jinbi">
+					<img src="./images/ico/jinbi2.png">
+					<span>564,571,963</span>
+					<p>今日提现&兑换金币总额</p>
 				</li>
 			</ul>
 		</div>
 	</div>
 </div>
 <!-- 首页区域结束 -->
+<div class="content">
+	<div class="content_game">
+		 <div class="content_game_game">
+		 	<div class="content_game_game_title">
+		 		<img class="content_game_game_title_game" src="./images/ico/game2.png">
+		 		<span class="content_game_game_title_title">游戏体验</span>
+		 		<p >hezone** 试玩：<span>热血传奇43服</span> 提现：<span>2元</span></p>
+		 		<img class="content_game_game_title_gengduo" src="./images/ico/gengduo.png">
+		 		<a href="#">更多游戏</a>
+		 	</div>
+		 	<ul class="content_list">
+		 		<li class="content_list_all">
+		 			<a href="#">
+		 				<span class="content_list_tag_type1">多服</span>
+		 				<p class="content_list_all_title">王者传奇17服 <span>返17%</span></p>
+		 				<i class="content_list_all_mask"></i>
+		 				<img class="content_list_all_img" src="./images/banner/gamelist.jpg">
+		 				<p class="content_list_all_jiangli">每人奖励：<span>5,100,000</span><img src="./images/ico/jinbi2.png"></p>
+		 				<p class="content_list_all_huansuan">约合：<span>510元</span></p>
+		 			</a>
+		 		</li>
+		 		<li class="content_list_all">
+		 			<a href="#">
+		 				<span class="content_list_tag_type1">多服</span>
+		 				<p class="content_list_all_title">王者传奇17服 <span>返17%</span></p>
+		 				<i class="content_list_all_mask"></i>
+		 				<img class="content_list_all_img" src="./images/banner/gamelist.jpg">
+		 				<p class="content_list_all_jiangli">每人奖励：<span>5,100,000</span><img src="./images/ico/jinbi2.png"></p>
+		 				<p class="content_list_all_huansuan">约合：<span>510元</span></p>
+		 			</a>
+		 		</li>
+		 		<li class="content_list_all">
+		 			<a href="#">
+		 				<span class="content_list_tag_type1">多服</span>
+		 				<p class="content_list_all_title">王者传奇17服 <span>返17%</span></p>
+		 				<i class="content_list_all_mask"></i>
+		 				<img class="content_list_all_img" src="./images/banner/gamelist.jpg">
+		 				<p class="content_list_all_jiangli">每人奖励：<span>5,100,000</span><img src="./images/ico/jinbi2.png"></p>
+		 				<p class="content_list_all_huansuan">约合：<span>510元</span></p>
+		 			</a>
+		 		</li>
+		 		<li class="content_list_all">
+		 			<a href="#">
+		 				<span class="content_list_tag_type1">多服</span>
+		 				<p class="content_list_all_title">王者传奇17服 <span>返17%</span></p>
+		 				<i class="content_list_all_mask"></i>
+		 				<img class="content_list_all_img" src="./images/banner/gamelist.jpg">
+		 				<p class="content_list_all_jiangli">每人奖励：<span>5,100,000</span><img src="./images/ico/jinbi2.png"></p>
+		 				<p class="content_list_all_huansuan">约合：<span>510元</span></p>
+		 			</a>
+		 		</li>
+		 		<li class="content_list_all">
+		 			<a href="#">
+		 				<span class="content_list_tag_type2">多服</span>
+		 				<p class="content_list_all_title">王者传奇17服 <span>返17%</span></p>
+		 				<i class="content_list_all_mask"></i>
+		 				<img class="content_list_all_img" src="./images/banner/gamelist.jpg">
+		 				<p class="content_list_all_jiangli">每人奖励：<span>5,100,000</span><img src="./images/ico/jinbi2.png"></p>
+		 				<p class="content_list_all_huansuan">约合：<span>510元</span></p>
+		 			</a>
+		 		</li>
+		 		<li class="content_list_all">
+		 			<a href="#">
+		 				<span class="content_list_tag_type1">多服</span>
+		 				<p class="content_list_all_title">王者传奇17服 <span>返17%</span></p>
+		 				<i class="content_list_all_mask"></i>
+		 				<img class="content_list_all_img" src="./images/banner/gamelist.jpg">
+		 				<p class="content_list_all_jiangli">每人奖励：<span>5,100,000</span><img src="./images/ico/jinbi2.png"></p>
+		 				<p class="content_list_all_huansuan">约合：<span>510元</span></p>
+		 			</a>
+		 		</li>
+		 		<li class="content_list_ad">
+		 			<a href="#">
+		 				<span class="content_list_tag">多服</span>
+		 				<p class="content_list_title">热血传奇专区43期</p>
+		 				<p class="content_list_info">每人奖励：<span>5,354,687</span><img src="./images/ico/jinbi2.png"></p>
+		 				<div class="content_list_ad_mask"></div>
+		 				<img src="./images/banner/gamelist1.jpg">
+		 			</a>
+		 		</li>
+
+		 	</ul>
+		 </div>
+		 <div class="content_game_ph">
+		 	<p class="content_game_ph_title"><img src="./images/ico/paihang.png">试玩收入排行榜</p>
+		 	<table>
+		 		<tr>
+		 			<th width="32">排名</th>
+		 			<th>昵称</th>
+		 			<th width="88">试玩收入</th>
+		 			<th>奖励</th>
+		 		</tr>
+		 		<tr>
+		 			<td><img src="./images/no1.png"></td>
+		 			<td>hezone</td>
+		 			<td>3,500,000</td>
+		 			<td>3888元</td>
+		 		</tr>
+		 		<tr>
+		 			<td><img src="./images/no2.png"></td>
+		 			<td>lichengyao</td>
+		 			<td>2,000,000</td>
+		 			<td>1288元</td>
+		 		</tr>
+		 		<tr>
+		 			<td><img src="./images/no3.png"></td>
+		 			<td>hecheng</td>
+		 			<td>1,500,000</td>
+		 			<td>888元</td>
+		 		</tr>
+		 		<tr>
+		 			<td>4</td>
+		 			<td>哈哈哈哈是</td>
+		 			<td>900,000</td>
+		 			<td>200元</td>
+		 		</tr>
+		 		<tr>
+		 			<td>5</td>
+		 			<td>撒大声地无群</td>
+		 			<td>800,000</td>
+		 			<td>100元</td>
+		 		</tr>
+		 		<tr>
+		 			<td>6</td>
+		 			<td>为尾数撒</td>
+		 			<td>700,000</td>
+		 			<td>50元</td>
+		 		</tr>
+		 		<tr>
+		 			<td>7</td>
+		 			<td>哈哈哈哈是</td>
+		 			<td>600,000</td>
+		 			<td>50元</td>
+		 		</tr>
+		 		<tr>
+		 			<td>8</td>
+		 			<td>哈哈哈哈是</td>
+		 			<td>500,000</td>
+		 			<td>50元</td>
+		 		</tr>
+		 		<tr>
+		 			<td>9</td>
+		 			<td>哈哈哈哈是</td>
+		 			<td>400,000</td>
+		 			<td>30元</td>
+		 		</tr>
+		 		<tr>
+		 			<td>10</td>
+		 			<td>哈哈哈哈是</td>
+		 			<td>300,000</td>
+		 			<td>10元</td>
+		 		</tr>
+		 	</table>
+		 </div>
+	</div>
+</div>
 
 <!-- 底部区域 -->
 <div class="footer">
