@@ -45,7 +45,7 @@ var v = new Vue({
 		],
 		zoushitu:[
 			{"num":12, "qihao":807155},{"num":22, "qihao":807154},{"num":8, "qihao":807153},{"num":9, "qihao":807152},{"num":16, "qihao":807151},{"num":25, "qihao":807150},{"num":7, "qihao":807149},{"num":10, "qihao":807148},{"num":13, "qihao":807147},{"num":19, "qihao":807146},{"num":7, "qihao":807145},{"num":7, "qihao":807144},{"num":3, "qihao":807143},{"num":16, "qihao":807142}
-		]		
+		]
 	},
 	mounted:function(){
 		setInterval(this.lottorTime,1000)
