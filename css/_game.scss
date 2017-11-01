@@ -779,9 +779,10 @@
 				display: block;
 				width: 240px;
 				float: left;
+				margin: 6px 0;
 				img{
 					display: inline-block;
-					width: 18px;
+					width: 15px;
 				}
 			}
 			.game_member_info_btn{
@@ -791,19 +792,36 @@
 				border-radius:4px;
 				box-shadow: 0px 0px 10px #ffc4a7;
 				margin-top: 80px;
-				a{
+				li{
+					width: 60px;
+					padding: 0 10px;
+					height: 58px;
 					float: left;
-					color: #f7f7f7;
-					display: inline-block;
-					width: 30px;
-					height: 30px;
-					border-radius:30px;
-					background:#fb6618;
-					img{
+					a{
+						width: 60px;
+						float: left;
+						color: #f7f7f7;
 						display: inline-block;
-						width: 14px;
-						text-align: center;
+						img{
+							padding:4px;
+							display: inline-block;
+							width: 20px;
+							background:#fb6618;
+							border-radius:30px;
+							margin-top: 5px;
+						}
+						span{
+							font-size: 12px;
+							color: #888888;
+							display: block;
+						}
 					}
+				}
+				li:nth-child(1) a img{
+					background: #60c547;
+				}
+				li:nth-child(3) a img{
+					background: #6aa9ff;
 				}
 			}
 			.game_member_info_head{
@@ -820,6 +838,32 @@
 				float: left;
 				font-size:13px;
 
+			}
+		}
+		.game_member_gameinfo{
+			float: left;
+			margin-top: 40px;
+			li:nth-child(1){
+				width: 260px;
+				text-align: center;
+			}
+			li{
+				width: 130px;
+				float: left;
+				text-align: center;
+				.game_member_gameinfo_s{
+					color: #60c547;
+				}
+				.game_member_gameinfo_y{
+					color: #ff764a;
+				}
+				p{
+					margin: 2px 0;
+				}
+				span{
+					color: #b4b4b4;
+					font-size:14px;
+				}
 			}
 		}
 		
