@@ -737,150 +737,92 @@
 
 	.game_member{
 		width: 260px;
+		height: 260px;
 		background: #ffffff;
 		float: right;
 		.game_member_info{
+			display: inline-block;
 			width: 240px;
-			padding: 10px;
-			.game_member_info_head{
-				width: 78px;
-				height: 78px;
-				background: #ffffff;
-				border-radius: 78px;
-				border: 10px solid #f8f8f8;
-				background-image: url("../images/head.gif");
-				background-size: cover;
-				float: left;
-			}
+			height: 100px;
+			padding:10px;
+			background: linear-gradient(to left, #fe7333, #ff9e44);
+			float: left;
 			.game_member_info_name{
-				color: #333333;
-				float: left;
-				margin-left: 8px;
-				font-size: 14px;
-				p{
-					padding: 2px;
-					margin: 0;
-					.game_member_info_tag{
-						display: inline-block;
-						padding: 0 10px 0 10px;
-						background: linear-gradient(to left, #ff7849, #ff605f);
-						color: #ffffff;
-						text-align: center;
-						border-radius: 20px;
-					}
-				}
-
-				p:last-of-type{
-					font-size: 12px;
-					span{
-						display: inline-block;
-						width: 10px;
-						height: 10px;
-						background: #66cd40;
-						border-radius: 10px;
-					}
-				}
-		}
-
-		.game_user_jinbi{
-			float: left;
-			color: #333333;
-			font-size: 14px;
-			text-align: center;
-			width: 100%;
-			margin: 0;
-			line-height: 30px;
-			border-bottom: 1px solid #f7f7f7;
-			padding-bottom: 8px;
-			span{
-				color: #ff615e;
-			}
-		}
-	}
-}
-
-	.game_info{
-		width: 240px;
-		padding: 10px;
-		background: #ffffff;
-		float: right;
-		font-size: 14px;
-		.game_info_qi{
-			width: 120px;
-			float: left;
-			cursor: pointer;
-			p{
-				margin: 5px;
-				text-align: center;
-				color: #333333;
-			}
-			span{
-				text-align: center;
-				display: block;
-				color: #ff734d;
-			}
-			.game_info_shu{
-				text-align: center;
-				display: none;
-				margin: 5px;
-				color: #66cd40;
-				span{
-					display: inline-block;
-					width: 20px;
-					height: 20px;
-					border: 1px solid #66cd40;
-					color: #66cd40;
-				}
-			}
-			.game_info_yin{
-				text-align: center;
-				display: block;
-				margin: 5px;
-				span{
-					display: inline-block;
-					width: 20px;
-					height: 20px;
-					border: 1px solid #ff734d;
-					color: #ff734d;
-				}
-			}
-		}
-
-		.game_info_qi:hover{
-			box-shadow: 0px 0px 20px #efefef;
-		}
-	}
-
-	.game_info_releef{
-		width: 240px;
-		padding: 10px;
-		background: #ffffff;
-		float: right;
-		font-size: 14px;
-		margin: 0;
-		border-bottom: 1px solid #f7f7f7;
-		ul{
-			li{
-				float: left;
 				color: #ffffff;
-				font-size: 12px;
-				.game_info_jiuji{
-					margin: 5px;
-					line-height: 30px;
-					@include g-button(#ff605f,#ff7849, 70px);
+				font-size: 14px;
+				float: left;
+				width: 170px;
+				margin:0;
+				margin-top: -3px;
+				padding-bottom: 4px;
+				position:relative;
+				span{
+					color: #ff913f;
+					display: inline-block;
+					padding:0 6px;
+					background:#ffffff;
+					border-radius:20px;
+					box-shadow: 0px 3px 12px #fb6618;
 				}
-				.game_info_gongzi{
-					margin: 5px;
-					line-height: 30px;
-					@include g-button(#66cd40,#51b457, 70px);
-				}
-				.game_info_yinhang{
-					margin: 5px;
-					line-height: 30px;
-					@include g-button(#4494fe,#6caaff, 70px);
+				img{
+					display: inline-block;
+				    width: 16px;
+				    position: absolute;
+				    top: 2px;
+				    margin: 0 4px;
 				}
 			}
+			.game_member_info_yue{
+				color: #ffffff;
+				font-weight: 900;
+				text-shadow: 0px 3px 12px #fb6618;
+				display: block;
+				width: 240px;
+				float: left;
+				img{
+					display: inline-block;
+					width: 18px;
+				}
+			}
+			.game_member_info_btn{
+				width: 240px;
+				height: 58px;
+				background: #ffffff;
+				border-radius:4px;
+				box-shadow: 0px 0px 10px #ffc4a7;
+				margin-top: 80px;
+				a{
+					float: left;
+					color: #f7f7f7;
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					border-radius:30px;
+					background:#fb6618;
+					img{
+						display: inline-block;
+						width: 14px;
+						text-align: center;
+					}
+				}
+			}
+			.game_member_info_head{
+				display: inline-block;
+				width: 40px;
+				border-radius:40px;
+				float: left;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			.game_member_info_id{
+				color: #ffffff;
+				display: inline-block;
+				float: left;
+				font-size:13px;
+
+			}
 		}
+		
 	}
 
 	.game_ranking{
