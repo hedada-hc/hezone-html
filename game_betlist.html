@@ -146,94 +146,90 @@
 				</div>
 			</div>
 
-			<!-- 弹幕区域 -->
-			<div class="game_danmu">
-				<div class="game_danmu_tanchuang">
-					<div class="game_danmu_title">鱼丸弹幕系统</div>
-					<textarea v-model="DM.DMtext" placeholder="这里输入弹幕内容20字以内！还可以发红包哟" @click="textarea"></textarea>
-					<div class="game_danmu_nav">
-						<svg class="icon icon_hb" aria-hidden="true" @click="showHB">
-						  <use xlink:href="#icon-hongbao1"></use>
-						</svg>
-					</div>
-					<div class="game_danmu_sendhb">
-						<input v-model="DM.DMHBje" type="number" min="1" max="10" name="jinbi" placeholder="Now，打算发多少红包呢？">
-						<input v-model="DM.DMHBnum" type="number" name="num" placeholder="多少人分？">
-						<svg class="icon" aria-hidden="true">
-						  <use xlink:href="#icon-jinbi3"></use>
-						</svg>
-						<p>红包金额最低100金币起，最高500,000金币，最低2人分</p>
-						<span>严厉打击利用红包系统刷注册金币，系统实时监控发现封号</span>
-					</div>
-					<div class="game_danmu_sendDM" @click="sendDM">发送弹幕</div>
-				</div>
-				<div class="game_mask" @click="hide">
-					
-				</div>
-				<div class="game_danmu_block"></div>
-				<div class="game_danmu_tag">
-					鱼丸弹幕
-				</div>
-				<div class="game_danmu_content">
-					<ul>
-
-						<li v-for="danmus in danmuData">
-							<a href="http://www.yuwanmao.com/member/136411">
-								<img width="32" :src="danmus.headPic">
-								<div class="game_danmu_content_msg">
-									<span>{{danmus.title}}</span>
-									<span class="game_danmu_name">{{danmus.nick}}  <p>盈利：13,561,210</p></span>
-								</div>
-							</a>
-						</li>
-
-
-						<li class="game_danmu_hongbao_border">
-							<a href="http://www.yuwanmao.com/member/136411">
-								<img width="32" src="./images/headPic2.gif">
-								<div class="game_danmu_content_msg game_danmu_hongbao">
-									<span>今天赚了很多来一波红包给你们</span>
-								</div>
-							</a>
-						</li>
-
-					</ul>
-				</div>
-				<div class="game_danmu_send" @click="sendDanMu">
-					发送弹幕
-				</div>
-
-			</div>
-
-
-			<!-- 竞猜列表区域 -->
-			<div class="game_luck">
+			<!-- 竞猜投注中奖列表区域 -->
+			<div class="game_luck game_betlist">
 				<table>
-				  <tr>
-				    <th>竞猜期号</th>
-				    <th>开奖时间</th>
-				    <th>竞猜结果</th>
-				    <th>金币总数</th>
-				    <th>中奖人数</th>
-				    <th>收入/投入</th>
-				    <th>竞猜</th>
-				  </tr>
-					
-					<tr v-for="(item,index) in gameData">
-					    <td>{{item.qihao}}</td>
-					    <td>{{item.time}}</td>
-					    <td v-if="item.res">{{item.num1}}+{{item.num2}}+{{item.num3}}=<span class="game_luck_num">{{item.res}}</span></td>
-					    <td v-else><span class="game_luck_num game_luck_x">?</span></td>
-					    <td>3,000,000,000</td>
-					    <td class="game_luck_zhong">{{item.zhong}}</td>
-					    <td>
-					    	<span class="game_luck_shou">收:0</span>
-					    	<span>竟:0</span>
-					    </td>
-					    <td>
-					    	<div v-if="item.res" class="game_luck_btn_yikai">已开</div> 
-					    	<div v-else class="game_luck_btn_jing">竞猜</div> 
-					    </td>
+					<tr>
+					    <th>用户信息</th>
+					    <th>投入金币</th>
+					    <th>盈利金币</th>
+					    <th>总获得金币</th>
+					    <th>获赞</th>
+					</tr>
+					<tr>
+						<td>
+							<img class="game_betlist_head" src="./images/head2.jpg">
+							<a href="#">何橙橙橙 
+								<span>13级</span>
+								<img title="vip1专属特权"  src="./images/ico/vip1.png">
+								<img title="该用户自动挂机中"  src="./images/ico/auto.png">
+							</a>
+							<p class="game_betlist_lh">ID: 88888 <i title="每日登陆奖励">靓</i> </p>
+						</td>
+						<td>30,000,000 <img src="./images/ico/jinbi2.png"></td>
+						<td>+ 1,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td>31,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td title="获赞奖金币">356 <img class="game_betlist_zan" src="./images/ico/zan.png"></td>
+					</tr>
+					<tr>
+						<td>
+							<img class="game_betlist_head" src="./images/head.gif">
+							<a href="#">我是莆田系医生 
+								<span>3级</span>
+								<!-- <img title="vip1专属特权"  src="./images/ico/vip1.png"> -->
+								<img title="该用户自动挂机中"  src="./images/ico/auto.png">
+							</a>
+							<p>ID: 95278</p>
+						</td>
+						<td>30,000,000 <img src="./images/ico/jinbi2.png"></td>
+						<td>+ 1,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td>31,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td title="获赞奖金币">309 <img class="game_betlist_zan" src="./images/ico/zan.png"></td>
+					</tr>
+					<tr>
+						<td>
+							<img class="game_betlist_head" src="./images/head.jpg">
+							<a href="#">IT宇宙人 
+								<span>27级</span>
+								<img title="vip1专属特权"  src="./images/ico/vip3.png">
+								<img title="该用户自动挂机中"  src="./images/ico/auto.png">
+							</a>
+							<p>ID: 68412</p>
+						</td>
+						<td>30,000,000 <img src="./images/ico/jinbi2.png"></td>
+						<td>+ 1,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td>31,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td title="获赞奖金币">691 <img class="game_betlist_zan" src="./images/ico/zan.png"></td>
+					</tr>
+					<tr>
+						<td>
+							<img class="game_betlist_head" src="./images/headPic.jpg">
+							<a href="#">Des souvenirs 
+								<span>8级</span>
+								<!-- <img title="vip1专属特权"  src="./images/ico/vip1.png"> -->
+								<img title="该用户自动挂机中"  src="./images/ico/auto.png">
+							</a>
+							<p>ID: 36421</p>
+						</td>
+						<td>30,000,000 <img src="./images/ico/jinbi2.png"></td>
+						<td>+ 1,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td>31,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td title="获赞奖金币">112 <img class="game_betlist_zan" src="./images/ico/zan.png"></td>
+					</tr>
+					<tr>
+						<td>
+							<img class="game_betlist_head" src="./images/headPic.jpg">
+							<a href="#">Des souvenirs 
+								<span>8级</span>
+								<!-- <img title="vip1专属特权"  src="./images/ico/vip1.png"> -->
+								<img title="该用户自动挂机中"  src="./images/ico/auto.png">
+							</a>
+							<p>ID: 31594</p>
+						</td>
+						<td>30,000,000 <img src="./images/ico/jinbi2.png"></td>
+						<td>+ 1,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td>31,021,531 <img src="./images/ico/jinbi2.png"></td>
+						<td title="获赞奖金币">112 <img class="game_betlist_zan" src="./images/ico/zan.png"></td>
 					</tr>
 				</table>
 
@@ -372,7 +368,6 @@
 					<td>66万</td>
 				</tr>
 			</table>
-
 		</div>
 	</div>
 <!-- 竞猜区域结束	 -->
@@ -432,3 +427,6 @@
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
+
+
+

@@ -588,13 +588,13 @@
 					border-bottom: 1px solid #efefef;
 					display: inline-block;
 					th{
-						width: 128px;
+						width: 180px;
 						font-weight: 100;
 						height: 36px;
 					}
 
 					td{
-						width: 128px;
+						width: 180px;
 						text-align: center;
 						height: 36px;
 						.game_luck_btn_jing{
@@ -655,7 +655,83 @@
 				}
 			}
 		}
+		.game_betlist{
+			table{
+				tr{
+					th:nth-child(1){
+						width: 260px;
+					}
+					td:nth-child(1){
+						width: 260px;
+						font-weight: 100;
+					}
+					th:nth-child(5){
+						width: 90px;
+					}
+					td:nth-child(5){
+						width: 90px;
+						font-weight: 100;
+						color: #a4a8b1;
+						cursor: pointer;
+						font-size: 13px;
+					}
+					td{
+						font-weight: bold;
+						color: #ff6d53;
+						.game_betlist_head{
+							display: inline-block;
+							width: 30px;
+							height: 30px;
+							border-radius:30px;
+							float: left;
+						    margin: 3px 10px;
+						}
+						.game_betlist_zan{
+							display: block;
+							width: 16px;
+							margin:0 auto;
+						}
+						.game_betlist_lh{
+							color: #ff6b22;
+						}
+						p{
+							float: left;
+						    margin: 0;
+						    font-size: 12px;
+						    width: 150px;
+						    text-align: left;
+						    color: #777777;
+						    i{
+						    	display: inline-block;
+							    padding: 0 4px;
+							    border-radius: 20px;
+							    color: #ff6b22;
+							    font-style: normal;
+							    font-size: 8px;
+						    }
+						}
+						a{
+							float: left;
+							color: #777777;
+							span{
+								color: #ffffff;
+								background:#ff764a; 
+								display: inline-block;
+								padding:0 5px;
+								border-radius:20px;
+								text-align: center;
+								font-size: 13px;
+							}
+							img{
+								display: inline-block;
+								width: 16px;
+							}
+						}
+					}
 
+				}
+			}
+		}
 		
 	}
 
@@ -790,14 +866,17 @@
 				font-size: 12px;
 				.game_info_jiuji{
 					margin: 5px;
+					line-height: 30px;
 					@include g-button(#ff605f,#ff7849, 70px);
 				}
 				.game_info_gongzi{
 					margin: 5px;
+					line-height: 30px;
 					@include g-button(#66cd40,#51b457, 70px);
 				}
 				.game_info_yinhang{
 					margin: 5px;
+					line-height: 30px;
 					@include g-button(#4494fe,#6caaff, 70px);
 				}
 			}
@@ -827,9 +906,11 @@
 
 		table{
 			color: #777777;
+			tr:nth-child(1){
+				border-bottom: 1px solid #efefef;
+			}
 			tr{
 				width: 240px;
-				border-bottom: 1px solid #efefef;
 				display: inline-block;
 				th{
 					font-weight: 100;
