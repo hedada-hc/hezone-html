@@ -185,6 +185,54 @@
 						}
 					}
 				}
+				.member_info_left_vip_opened{
+					nav{
+						display: block;
+						width: 260px;
+						.member_info_left_vip_opened_pic{
+							display: inline-block;
+							width: 40px;
+							height: 40px;
+							background: linear-gradient(to left, #ff675e, #ff9765);
+							border-radius:6px;
+							float: left;
+							margin-left: 4px;
+						}
+						.member_info_left_vip_opened_vipname{
+							color: #444444;
+							font-size: 13px;
+							float: left;
+							width: 164px;
+							text-align: left;
+							white-space: nowrap;
+						    overflow: hidden;
+						    text-overflow: ellipsis;
+						}
+						.member_info_left_vip_opened_descr{
+							font-size: 10px;
+							color: #858186;
+							display: block;
+							float: left;
+							width: 164px;
+							text-align: left;
+							white-space: nowrap;
+						    overflow: hidden;
+						    text-overflow: ellipsis;
+						}
+						.member_info_left_vip_opened_xf{
+							display: inline-block;
+							float: right;
+							width: 46px;
+							height: 20px;
+							line-height: 20px;
+							text-align: center;
+							color: #0058e2;
+							font-size:12px;
+							background:#eef2f5;
+							border-radius: 20px;
+						}
+					}
+				}
 			}
 		}
 	}	
