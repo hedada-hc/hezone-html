@@ -3,10 +3,11 @@
 @import 'head'; //头部css
 @import 'game';//游戏区域css
 @import 'footer';//底部区域
-@import 'login';
+@import 'login'; //等于css
 @import 'register';//注册css
 @import 'betting';// 投注css
 @import 'indexs'; //首页css
+@import 'member';//用户中心css
 $color: #f2f2f2;
 $z-color: #ff510c; 
 $font-color: #ff7300;
