@@ -26,6 +26,11 @@ body{
 	margin: 0px;
 	padding: 0px;
 	background: $color;
+	width:100%;
+	min-width:1200px;
+	max-width:100%;
+	height:100%;
+	overflow-x:hidden;
 	.gloden{
 		color: #ff500b;
 	}

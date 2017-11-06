@@ -171,7 +171,6 @@
 							height: 34px;
 							border-radius:34px;
 						    background: linear-gradient(to left, #ff7849, #ff605f);
-						    box-shadow: -2px 5px 6px #ff605f;
 						}
 						span{
 							display: block;
@@ -186,9 +185,13 @@
 					}
 				}
 				.member_info_left_vip_opened{
+				    margin-top: 10px;
+				    text-align: center;
 					nav{
 						display: block;
 						width: 260px;
+						height: 46px;
+						border-bottom:1px solid #f7f7f7;
 						.member_info_left_vip_opened_pic{
 							display: inline-block;
 							width: 40px;
@@ -197,6 +200,7 @@
 							border-radius:6px;
 							float: left;
 							margin-left: 4px;
+							margin-right: 6px;
 						}
 						.member_info_left_vip_opened_vipname{
 							color: #444444;
@@ -207,6 +211,12 @@
 							white-space: nowrap;
 						    overflow: hidden;
 						    text-overflow: ellipsis;
+						    span{
+						    	color: #ff675e;
+						    	display: inline-block;
+						    	float: right;
+						    	font-size: 12px;
+						    }
 						}
 						.member_info_left_vip_opened_descr{
 							font-size: 10px;
@@ -218,11 +228,12 @@
 							white-space: nowrap;
 						    overflow: hidden;
 						    text-overflow: ellipsis;
+						    line-height: 22px;
 						}
 						.member_info_left_vip_opened_xf{
 							display: inline-block;
 							float: right;
-							width: 46px;
+							width: 42px;
 							height: 20px;
 							line-height: 20px;
 							text-align: center;
@@ -230,9 +241,53 @@
 							font-size:12px;
 							background:#eef2f5;
 							border-radius: 20px;
+							margin-top: -10px;
+						}
+					}
+					.member_info_left_flk{
+						p{
+						    font-size: 14px;
+						    color: #444444;
+						    margin: 8px 0;
+						}
+						input{
+							display: block;
+							border:none;
+							outline: none;
+							border-radius:20px;
+							width: 210px;
+							height: 18px;
+							font-size:13px;
+							background:#eef2f5;
+							padding:6px 15px;
+							margin: 0 auto;
+							margin-top:10px;
+							margin-bottom: 10px;
+							color: #666666;
+						}
+						button{
+							display: inline-block;
+							height: 30px;
+							line-height: 30px;
+							border:none;
+							outline: none;
+							color: #ffffff;
+							cursor: pointer;
+							border-radius:30px;
+						}
+						.member_info_left_shiyong{
+							width: 140px;
+							background: #ff635c;
+						}
+						.member_info_left_chaxun{
+							width: 90px;
+							background:#a375ff;
 						}
 					}
 				}
+			}
+			.member_info_left_vip{
+				height: 240px;
 			}
 		}
 	}	
