@@ -298,23 +298,117 @@
 			float: right;
 		    box-shadow: 0px 3px 12px #e2e2e2;
     		margin-top: 10px;
+    		h6{
+    			margin: 12px 0;
+    		}
     		.member_info_right_index_info{
     			width: 850px;
     			height: 125px;
     			border-bottom:1px solid #f7f7f7;
     		    li{
-    		    	width: 256px;
-	    			height: 100px;
+    		    	width: 232px;
+	    			height: 70px;
+	    			padding: 12px;
 	    			background:#ffffff;
 	    		    box-shadow: 0px 0px 20px #f1f1f1;
+	    		    float: left;
+	    		    margin-right: 41px;
 	    		    img{
 	    		    	display: inline-block;
 	    		    	width: 40px;
 	    		    	height: 40px;
 	    		    	border-radius:40px;
 	    		     	background: linear-gradient(to left, #925ffa, #ab85f6);
+	    		     	float: left;
+	    		    }
+	    		    .member_info_right_index_num{
+	    		    	width: 186px;
+	    		    	height: 40px;
+	    		    	float: left;
+	    		    	p{
+	    		    		text-align: right;
+	    		    		margin:0;
+	    		    		color: #ff6d53;
+	    		    		font-weight: 900;
+	    		    	}
+	    		    	span{
+	    		    		display: block;
+	    		    		text-align: right;
+	    		    		font-size: 12px;
+	    		    		color: #b9b9b9;
+	    		    	}
+	    		    }
+	    		    .member_info_right_index_name{
+	    		    	width: 100%;
+	    		    	float: left;
+	    		    	margin-top: 10px;
+	    		    	p{
+	    		    		margin:0px;
+	    		    		font-size: 14px;
+	    		    		color: #333333;
+	    		    		text-align: left;
+	    		    		float: left;
+	    		    		line-height: 20px;
+
+	    		    	}
+	    		    	span{
+	    		    		display: inline-block;
+	    		    		text-align: right;
+	    		    		color: #666666;
+	    		    		font-size: 12px;
+	    		    		float: right;
+	    		    		line-height: 20px;
+	    		    	}
+	    		    	a{
+	    		    		display: inline-block;
+	    		    		height: 26px;
+	    		    		padding:0 10px;
+	    		    		border-radius:26px;
+	    		    		background: linear-gradient(to left, #925ffa, #ab85f6);
+	    		    		color: #ffffff;
+	    		    		text-align: center;
+	    		    		line-height: 26px;
+	    		    		font-size: 12px;
+	    		    		float: right;
+	    		    		margin-top: -4px;
+	    		    	}
 	    		    }
     		    }
+    		    li:nth-child(3){
+    		    	margin-right: 0px;
+    		    }
+    		}
+    		.member_info_right_index_message{
+
+    		}
+    		.member_info_right_index_q{
+    			width: 850px;
+    			h6{
+    				text-align: left;
+    			}
+    			ul{
+    				li{
+    					float: left;
+    					background:#dddddd;
+    					border-radius:50px;
+    					margin-right:10px;
+    					a{
+    						text-align: center;
+    						display: inline-block;
+    						padding:0 8px;
+    						padding-top:4px;
+    						padding-bottom:4px;
+    						font-size: 12px;
+    						color: #333333;
+    					}
+    				}
+    				li:hover{
+    					background:#d0d0d0;
+    					a{
+    						color: #ffffff;
+    					}
+    				}
+    			}
     		}
 		}
 
