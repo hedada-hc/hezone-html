@@ -290,5 +290,39 @@
 				height: 240px;
 			}
 		}
+		.member_info_right{
+			width: 850px;
+			height: 749px;
+			padding: 25px;
+			background:#ffffff;
+			float: right;
+		    box-shadow: 0px 3px 12px #e2e2e2;
+    		margin-top: 10px;
+    		.member_info_right_index_info{
+    			width: 850px;
+    			height: 125px;
+    			border-bottom:1px solid #f7f7f7;
+    		    li{
+    		    	width: 256px;
+	    			height: 100px;
+	    			background:#ffffff;
+	    		    box-shadow: 0px 0px 20px #f1f1f1;
+	    		    img{
+	    		    	display: inline-block;
+	    		    	width: 40px;
+	    		    	height: 40px;
+	    		    	border-radius:40px;
+	    		     	background: linear-gradient(to left, #925ffa, #ab85f6);
+	    		    }
+    		    }
+    		}
+		}
+
 	}	
 }
+
+/* 
+11 - 6
+今日做个人中心进来首页
+
+*/
