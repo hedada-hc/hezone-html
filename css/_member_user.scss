@@ -1,0 +1,122 @@
+@charset 'utf-8';
+.member .member_info .member_info_right{
+	.member_info_right_user_title{
+		width:850px;
+		height:42px;
+		margin:0px;
+		font-size: 16px;
+		color: #333333;
+		font-weight: 100;
+		border-bottom:1px solid #f7f7f7;
+	}
+	.member_info_right_user_head{
+		height: 115px;
+		width: 850px;
+		box-shadow: 0px 3px 18px #f5f5f5;
+		text-align: center;
+		.member_info_right_user_head_pic{
+			width: 70px;
+			height: 70px;
+			border-radius:70px;
+			float: left;
+			position: relative;
+			left: 50%;
+			margin: 23px 0;
+			margin-left: -70px;
+			overflow: hidden;
+			img{
+				display: inline-block;
+				width: 70px;
+				height: 70px;
+			}
+			i{
+				font-style: normal;
+			    display: inline-block;
+			    position: absolute;
+			    left: 50%;
+			    z-index: 2;
+			    margin-left: -39px;
+			    margin-top: -23px;
+			    font-size: 10px;
+			    background: rgba(0,0,0,0.6);
+			    color: #ffffff;
+			    width: 80px;
+			    height: 29px;
+			    cursor: pointer;
+			}
+		}
+		.member_info_right_user_head_name{
+			float: left;
+			position:relative;
+			left: 50%;
+			margin-left: 15px;
+			p{
+				margin:0px;
+				color: #545454;
+				margin-top: 38px;
+				text-align: left;
+			}
+			span{
+				display: block;
+				text-align: left;
+				color: #999999;
+				font-size: 12px;
+			}
+		}
+	}
+	.member_info_right_user_info{
+		margin-top: 20px;
+		li{
+			width: 850px;
+			height: 62px;
+			padding-top:12px;
+			border-bottom:1px solid #f7f7f7;
+			img{
+				display: inline-block;
+				width: 18px;
+				padding: 0 4px;
+				float: left;
+				margin-top: 2px;
+			}
+			h5{
+				float: left;
+				margin:0px;
+				font-size: 16px;
+			    font-weight: 600;
+			    color: #333333;
+			    margin-right: 6px;
+			}
+			span{
+				font-size:12px;
+				color: #ff3e3e;
+			}
+			.member_info_right_user_info_phone{
+				color: #1cac00;
+			}
+			p{
+				margin:0px;
+				margin-left: 25px;
+				font-size:13px;
+				color: #8e8e8e;
+				margin-top: 6px;
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				color: #ffffff;
+				background:#4291f8;
+				outline: none;
+				border:none;
+				font-size:13px;
+				border-radius:4px;
+				cursor: pointer;
+				float: right;
+				margin: 21px 0;
+			}
+			.member_info_right_user_info_edit{
+				background:#fe744d;
+			}
+		}
+	}
+}
